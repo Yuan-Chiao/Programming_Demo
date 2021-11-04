@@ -388,9 +388,12 @@ N_notConverge_IntervalCensored
 N_NaN_IntervalCensored
 N_outlier_IntervalCensored
 
-###############################
-#         Injury: Exact       #
-###############################
+####################################
+#                                  #
+#          All Exact Data          #
+#         No Censored Data         #
+#                                  #
+####################################
 # Weibull parameters: Alpha and Shape
 Weibull.Exact.Alpha.boot <- exp(-Weibull.Exact.coeff.boot/Weibull.Exact.scale.boot)
 Weibull.Exact.Alpha.boot.SurvCurve <- Weibull.Exact.Alpha.boot
@@ -441,8 +444,8 @@ for (j in 1:(SurvCurvePointN-1)){
 	MedFailTimeCIboot.Lower[j+1] <- Weibull.Exact.MedFailTime.boot[BootstrapN*0.05/2]
 	MedFailTimeCIboot.Upper[j+1] <- Weibull.Exact.MedFailTime.boot[BootstrapN*(1-0.05/2)]
 }
-InjuryTimeDataboot.Exact <- cbind(Yindex,MedFailTimeMLEboot,MedFailTimeSEboot,MedFailTimeCIboot.Lower,MedFailTimeCIboot.Upper)
-write.csv(InjuryTimeDataboot.Exact, file = "C:/Users/luyua/OneDrive/Documents/GitHub/Programming_Demo/R/InjuryTimeDataboot.Exact.csv")
+InjuryTimeDataboot.NoCensor <- cbind(Yindex,MedFailTimeMLEboot,MedFailTimeSEboot,MedFailTimeCIboot.Lower,MedFailTimeCIboot.Upper)
+write.csv(InjuryTimeDataboot.NoCensor, file = "C:/Users/luyua/OneDrive/Documents/GitHub/Programming_Demo/R/InjuryTimeDataboot.NoCensor.csv")
 
 # Weibull parameter: Shape
 WeibullShapeCIbootRange <- WeibullShapeCIboot.Upper-WeibullShapeCIboot.Lower
