@@ -1,0 +1,2057 @@
+----------------------------------------------------
+Thu Apr 29 16:59:48 EDT 2021
+/home/yuan/Desktop/DeepLearning/Placenta_seg/
+NAME: Pla_Seg
+---------------------start--------------------------
+WARNING: Logging before flag parsing goes to stderr.
+W0429 17:01:03.512396 46912496385280 deprecation.py:506] From /cm/shared/apps/python/3.6.0/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+********************   Read Data   ********************
+Placenta segmentation dimension for subject ID= 0 : (73, 89, 40)
+Placenta segmentation dimension for subject ID= 1 : (130, 90, 49)
+Placenta segmentation dimension for subject ID= 2 : (96, 85, 41)
+Placenta segmentation dimension for subject ID= 3 : (120, 87, 44)
+Placenta segmentation dimension for subject ID= 4 : (87, 88, 36)
+Placenta segmentation dimension for subject ID= 5 : (92, 98, 47)
+Placenta segmentation dimension for subject ID= 6 : (71, 99, 39)
+Placenta segmentation dimension for subject ID= 7 : (103, 101, 39)
+Placenta segmentation dimension for subject ID= 8 : (131, 50, 36)
+Placenta segmentation dimension for subject ID= 9 : (114, 116, 41)
+Placenta segmentation dimension for subject ID= 10 : (87, 71, 41)
+Placenta segmentation dimension for subject ID= 11 : (109, 93, 32)
+Placenta segmentation dimension for subject ID= 12 : (97, 38, 45)
+Placenta segmentation dimension for subject ID= 13 : (85, 49, 46)
+Placenta segmentation dimension for subject ID= 14 : (98, 63, 54)
+Placenta segmentation dimension for subject ID= 15 : (85, 62, 33)
+Placenta segmentation dimension for subject ID= 16 : (113, 55, 38)
+Placenta segmentation dimension for subject ID= 17 : (94, 52, 41)
+Placenta segmentation dimension for subject ID= 18 : (88, 86, 36)
+Placenta segmentation dimension for subject ID= 19 : (78, 99, 38)
+Placenta segmentation dimension for subject ID= 20 : (94, 111, 56)
+Placenta segmentation dimension for subject ID= 21 : (99, 61, 32)
+Placenta segmentation dimension for subject ID= 22 : (100, 80, 37)
+Placenta segmentation dimension for subject ID= 23 : (69, 70, 38)
+Placenta segmentation dimension for subject ID= 24 : (64, 64, 29)
+Placenta segmentation dimension for subject ID= 25 : (75, 79, 36)
+Placenta segmentation dimension for subject ID= 26 : (84, 91, 28)
+Placenta segmentation dimension for subject ID= 27 : (97, 86, 36)
+Placenta segmentation dimension for subject ID= 28 : (113, 84, 46)
+Placenta segmentation dimension for subject ID= 29 : (118, 76, 51)
+Placenta segmentation dimension for subject ID= 30 : (66, 90, 38)
+Placenta segmentation dimension for subject ID= 31 : (99, 56, 46)
+Placenta segmentation dimension for subject ID= 32 : (83, 54, 39)
+Placenta segmentation dimension for subject ID= 33 : (64, 87, 32)
+Placenta segmentation dimension for subject ID= 34 : (97, 48, 40)
+Placenta segmentation dimension for subject ID= 35 : (74, 74, 37)
+Placenta segmentation dimension for subject ID= 36 : (107, 109, 50)
+Placenta segmentation dimension for subject ID= 37 : (80, 83, 32)
+Placenta segmentation dimension for subject ID= 38 : (99, 99, 42)
+Placenta segmentation dimension for subject ID= 39 : (113, 94, 29)
+Placenta segmentation dimension for subject ID= 40 : (111, 97, 35)
+Placenta segmentation dimension for subject ID= 41 : (104, 78, 20)
+Placenta segmentation dimension for subject ID= 42 : (96, 70, 29)
+Placenta segmentation dimension for subject ID= 43 : (115, 87, 53)
+Placenta segmentation dimension for subject ID= 44 : (92, 92, 27)
+Placenta segmentation dimension for subject ID= 45 : (126, 110, 30)
+Placenta segmentation dimension for subject ID= 46 : (89, 90, 38)
+Placenta segmentation dimension for subject ID= 47 : (116, 92, 45)
+Placenta segmentation dimension for subject ID= 48 : (105, 80, 49)
+Placenta segmentation dimension for subject ID= 49 : (104, 93, 22)
+Placenta segmentation dimension for subject ID= 50 : (85, 94, 35)
+Placenta segmentation dimension for subject ID= 51 : (96, 67, 26)
+Placenta segmentation dimension for subject ID= 52 : (73, 82, 41)
+Placenta segmentation dimension for subject ID= 53 : (105, 42, 45)
+Placenta segmentation dimension for subject ID= 54 : (89, 92, 50)
+Placenta segmentation dimension for subject ID= 55 : (91, 75, 43)
+Placenta segmentation dimension for subject ID= 56 : (140, 57, 40)
+Placenta segmentation dimension for subject ID= 57 : (80, 78, 37)
+Placenta segmentation dimension for subject ID= 58 : (101, 74, 34)
+Placenta segmentation dimension for subject ID= 59 : (79, 89, 34)
+Placenta segmentation dimension for subject ID= 60 : (121, 90, 47)
+Placenta segmentation dimension for subject ID= 61 : (79, 75, 24)
+Placenta segmentation dimension for subject ID= 62 : (82, 79, 22)
+Placenta segmentation dimension for subject ID= 63 : (115, 83, 29)
+Placenta segmentation dimension for subject ID= 64 : (130, 101, 25)
+Placenta segmentation dimension for subject ID= 65 : (105, 70, 36)
+Placenta segmentation dimension for subject ID= 66 : (106, 88, 36)
+Placenta segmentation dimension for subject ID= 67 : (70, 79, 31)
+Placenta segmentation dimension for subject ID= 68 : (76, 76, 41)
+Placenta segmentation dimension for subject ID= 69 : (76, 90, 43)
+Placenta segmentation dimension for subject ID= 70 : (89, 84, 27)
+Placenta segmentation dimension for subject ID= 71 : (105, 98, 40)
+Placenta segmentation dimension for subject ID= 72 : (59, 90, 41)
+Placenta segmentation dimension for subject ID= 73 : (99, 82, 46)
+Placenta segmentation dimension for subject ID= 74 : (91, 81, 45)
+Placenta segmentation dimension for subject ID= 75 : (102, 93, 38)
+Placenta segmentation dimension for subject ID= 76 : (87, 56, 31)
+Placenta segmentation dimension for subject ID= 77 : (83, 82, 42)
+Placenta segmentation dimension for subject ID= 78 : (89, 87, 30)
+Placenta segmentation dimension for subject ID= 79 : (105, 69, 40)
+Placenta segmentation dimension for subject ID= 80 : (86, 61, 34)
+Placenta segmentation dimension for subject ID= 81 : (109, 56, 39)
+Placenta segmentation dimension for subject ID= 82 : (98, 92, 27)
+Placenta segmentation dimension for subject ID= 83 : (118, 70, 53)
+Placenta segmentation dimension for subject ID= 84 : (112, 88, 42)
+Placenta segmentation dimension for subject ID= 85 : (104, 67, 44)
+Placenta segmentation dimension for subject ID= 86 : (98, 67, 45)
+Placenta segmentation dimension for subject ID= 87 : (84, 69, 38)
+Placenta segmentation dimension for subject ID= 88 : (76, 86, 43)
+Placenta segmentation dimension for subject ID= 89 : (81, 86, 32)
+Placenta segmentation dimension for subject ID= 90 : (116, 67, 41)
+Placenta segmentation dimension for subject ID= 91 : (95, 68, 32)
+Placenta segmentation dimension for subject ID= 92 : (103, 91, 29)
+Placenta segmentation dimension for subject ID= 93 : (90, 91, 21)
+Placenta segmentation dimension for subject ID= 94 : (99, 40, 44)
+Placenta segmentation dimension for subject ID= 95 : (114, 51, 49)
+Placenta segmentation dimension for subject ID= 96 : (89, 80, 37)
+Placenta segmentation dimension for subject ID= 97 : (99, 56, 53)
+Placenta segmentation dimension for subject ID= 98 : (124, 50, 37)
+Placenta segmentation dimension for subject ID= 99 : (105, 88, 23)
+Placenta segmentation dimension for subject ID= 100 : (102, 51, 35)
+Placenta segmentation dimension for subject ID= 101 : (100, 94, 34)
+Placenta segmentation dimension for subject ID= 102 : (111, 79, 46)
+Placenta segmentation dimension for subject ID= 103 : (81, 66, 43)
+Placenta segmentation dimension for subject ID= 104 : (104, 92, 47)
+Placenta segmentation dimension for subject ID= 105 : (102, 63, 54)
+Placenta segmentation dimension for subject ID= 106 : (112, 56, 48)
+Placenta segmentation dimension for subject ID= 107 : (71, 73, 29)
+Placenta segmentation dimension for subject ID= 108 : (95, 89, 40)
+Placenta segmentation dimension for subject ID= 109 : (71, 89, 42)
+Placenta segmentation dimension for subject ID= 110 : (77, 111, 48)
+Placenta segmentation dimension for subject ID= 111 : (86, 43, 34)
+Placenta segmentation dimension for subject ID= 112 : (109, 64, 48)
+Placenta segmentation dimension for subject ID= 113 : (114, 91, 33)
+Placenta segmentation dimension for subject ID= 114 : (120, 93, 35)
+Placenta segmentation dimension for subject ID= 115 : (101, 49, 34)
+Placenta segmentation dimension for subject ID= 116 : (115, 66, 36)
+Placenta segmentation dimension for subject ID= 117 : (60, 79, 46)
+Placenta segmentation dimension for subject ID= 118 : (58, 71, 46)
+Placenta segmentation dimension for subject ID= 119 : (102, 80, 58)
+Placenta segmentation dimension for subject ID= 120 : (86, 61, 31)
+Placenta segmentation dimension for subject ID= 121 : (51, 65, 41)
+Placenta segmentation dimension for subject ID= 122 : (72, 89, 34)
+Placenta segmentation dimension for subject ID= 123 : (122, 61, 44)
+Placenta segmentation dimension for subject ID= 124 : (170, 168, 23)
+Placenta segmentation dimension for subject ID= 125 : (78, 52, 40)
+Placenta segmentation dimension for subject ID= 126 : (116, 62, 46)
+Placenta segmentation dimension for subject ID= 127 : (90, 79, 39)
+Placenta segmentation dimension for subject ID= 128 : (77, 108, 49)
+Placenta segmentation dimension for subject ID= 129 : (100, 36, 46)
+Placenta segmentation dimension for subject ID= 130 : (120, 50, 50)
+Placenta segmentation dimension for subject ID= 131 : (85, 85, 39)
+Placenta segmentation dimension for subject ID= 132 : (92, 104, 51)
+Placenta segmentation dimension for subject ID= 133 : (104, 63, 35)
+Placenta segmentation dimension for subject ID= 134 : (119, 77, 42)
+Placenta segmentation dimension for subject ID= 135 : (82, 87, 49)
+Placenta segmentation dimension for subject ID= 136 : (94, 85, 54)
+Placenta segmentation dimension for subject ID= 137 : (104, 61, 43)
+Placenta segmentation dimension for subject ID= 138 : (105, 62, 43)
+Placenta segmentation dimension for subject ID= 139 : (171, 216, 44)
+Placenta segmentation dimension for subject ID= 140 : (131, 84, 47)
+Placenta segmentation dimension for subject ID= 141 : (99, 37, 37)
+Placenta segmentation dimension for subject ID= 142 : (97, 89, 22)
+Placenta segmentation dimension for subject ID= 143 : (81, 91, 38)
+Placenta segmentation dimension for subject ID= 144 : (108, 82, 29)
+Placenta segmentation dimension for subject ID= 145 : (107, 92, 27)
+Placenta segmentation dimension for subject ID= 146 : (59, 76, 36)
+Placenta segmentation dimension for subject ID= 147 : (88, 71, 52)
+Placenta segmentation dimension for subject ID= 148 : (305, 217, 35)
+Placenta segmentation dimension for subject ID= 149 : (108, 82, 42)
+Placenta segmentation dimension for subject ID= 150 : (82, 80, 28)
+Placenta segmentation dimension for subject ID= 151 : (96, 102, 29)
+Placenta segmentation dimension for subject ID= 152 : (97, 41, 52)
+Placenta segmentation dimension for subject ID= 153 : (70, 96, 40)
+Placenta segmentation dimension for subject ID= 154 : (94, 113, 49)
+Placenta segmentation dimension for subject ID= 155 : (56, 83, 41)
+Placenta segmentation dimension for subject ID= 156 : (62, 101, 49)
+Placenta segmentation dimension for subject ID= 157 : (90, 85, 38)
+Placenta segmentation dimension for subject ID= 158 : (91, 94, 40)
+Placenta segmentation dimension for subject ID= 159 : (108, 51, 38)
+Placenta segmentation dimension for subject ID= 160 : (65, 86, 48)
+Placenta segmentation dimension for subject ID= 161 : (76, 74, 34)
+Placenta segmentation dimension for subject ID= 162 : (118, 92, 53)
+Placenta segmentation dimension for subject ID= 163 : (63, 88, 27)
+Placenta segmentation dimension for subject ID= 164 : (102, 68, 37)
+Placenta segmentation dimension for subject ID= 165 : (77, 86, 28)
+Placenta segmentation dimension for subject ID= 166 : (108, 83, 36)
+Placenta segmentation dimension for subject ID= 167 : (101, 65, 51)
+Placenta segmentation dimension for subject ID= 168 : (129, 84, 51)
+Placenta segmentation dimension for subject ID= 169 : (108, 44, 48)
+Placenta segmentation dimension for subject ID= 170 : (116, 79, 50)
+Placenta segmentation dimension for subject ID= 171 : (84, 100, 33)
+Placenta segmentation dimension for subject ID= 172 : (122, 56, 49)
+Placenta segmentation dimension for subject ID= 173 : (95, 69, 44)
+Placenta segmentation dimension for subject ID= 174 : (88, 91, 48)
+Placenta segmentation dimension for subject ID= 175 : (89, 71, 41)
+Placenta segmentation dimension for subject ID= 176 : (81, 98, 29)
+Placenta segmentation dimension for subject ID= 177 : (98, 45, 37)
+Placenta segmentation dimension for subject ID= 178 : (85, 90, 37)
+Placenta segmentation dimension for subject ID= 179 : (83, 99, 48)
+Placenta segmentation dimension for subject ID= 180 : (76, 60, 26)
+Placenta segmentation dimension for subject ID= 181 : (103, 43, 47)
+Placenta segmentation dimension for subject ID= 182 : (96, 93, 35)
+Placenta segmentation dimension for subject ID= 183 : (90, 88, 30)
+Placenta segmentation dimension for subject ID= 184 : (115, 105, 33)
+Placenta segmentation dimension for subject ID= 185 : (94, 69, 39)
+Placenta segmentation dimension for subject ID= 186 : (88, 102, 43)
+Placenta segmentation dimension for subject ID= 187 : (104, 96, 31)
+Placenta segmentation dimension for subject ID= 188 : (113, 61, 41)
+Placenta segmentation dimension for subject ID= 189 : (100, 83, 38)
+Placenta segmentation dimension for subject ID= 190 : (113, 98, 41)
+Placenta segmentation dimension for subject ID= 191 : (108, 35, 43)
+Placenta segmentation dimension for subject ID= 192 : (100, 60, 47)
+Placenta segmentation dimension for subject ID= 193 : (69, 39, 28)
+Placenta segmentation dimension for subject ID= 194 : (83, 33, 35)
+Placenta segmentation dimension for subject ID= 195 : (72, 75, 19)
+Placenta segmentation dimension for subject ID= 196 : (88, 94, 41)
+Placenta segmentation dimension for subject ID= 197 : (109, 89, 48)
+Placenta segmentation dimension for subject ID= 198 : (103, 51, 48)
+Placenta segmentation dimension for subject ID= 199 : (122, 73, 53)
+Placenta segmentation dimension for subject ID= 200 : (83, 48, 38)
+Placenta segmentation dimension for subject ID= 201 : (102, 64, 38)
+Placenta segmentation dimension for subject ID= 202 : (103, 57, 46)
+Placenta segmentation dimension for subject ID= 203 : (74, 49, 46)
+Placenta segmentation dimension for subject ID= 204 : (180, 75, 47)
+Placenta segmentation dimension for subject ID= 205 : (93, 96, 26)
+Placenta segmentation dimension for subject ID= 206 : (115, 91, 43)
+Placenta segmentation dimension for subject ID= 207 : (78, 112, 37)
+Placenta segmentation dimension for subject ID= 208 : (111, 37, 38)
+Placenta segmentation dimension for subject ID= 209 : (92, 103, 39)
+Placenta segmentation dimension for subject ID= 210 : (116, 51, 36)
+Placenta segmentation dimension for subject ID= 211 : (97, 90, 38)
+Placenta segmentation dimension for subject ID= 212 : (77, 42, 44)
+Placenta segmentation dimension for subject ID= 213 : (102, 58, 45)
+Placenta segmentation dimension for subject ID= 214 : (89, 95, 41)
+Placenta segmentation dimension for subject ID= 215 : (61, 116, 50)
+Placenta segmentation dimension for subject ID= 216 : (114, 68, 47)
+Placenta segmentation dimension for subject ID= 217 : (110, 85, 47)
+Placenta segmentation dimension for subject ID= 218 : (76, 91, 34)
+Placenta segmentation dimension for subject ID= 219 : (100, 97, 43)
+Placenta segmentation dimension for subject ID= 220 : (75, 97, 28)
+Placenta segmentation dimension for subject ID= 221 : (90, 104, 38)
+Placenta segmentation dimension for subject ID= 222 : (98, 77, 48)
+Placenta segmentation dimension for subject ID= 223 : (123, 74, 41)
+Placenta segmentation dimension for subject ID= 224 : (87, 43, 31)
+Placenta segmentation dimension for subject ID= 225 : (122, 65, 39)
+Placenta segmentation dimension for subject ID= 226 : (125, 80, 42)
+Placenta segmentation dimension for subject ID= 227 : (74, 66, 34)
+Placenta segmentation dimension for subject ID= 228 : (87, 79, 46)
+Placenta segmentation dimension for subject ID= 229 : (110, 54, 56)
+Placenta segmentation dimension for subject ID= 230 : (79, 88, 31)
+Placenta segmentation dimension for subject ID= 231 : (96, 84, 47)
+Placenta segmentation dimension for subject ID= 232 : (104, 68, 44)
+Placenta segmentation dimension for subject ID= 233 : (114, 69, 51)
+Placenta segmentation dimension for subject ID= 234 : (61, 77, 40)
+Placenta segmentation dimension for subject ID= 235 : (67, 95, 51)
+Placenta segmentation dimension for subject ID= 236 : (82, 49, 33)
+Placenta segmentation dimension for subject ID= 237 : (106, 89, 21)
+Placenta segmentation dimension for subject ID= 238 : (73, 62, 27)
+Placenta segmentation dimension for subject ID= 239 : (102, 83, 33)
+Placenta segmentation dimension for subject ID= 240 : (76, 98, 46)
+Placenta segmentation dimension for subject ID= 241 : (96, 97, 58)
+Placenta segmentation dimension for subject ID= 242 : (62, 70, 34)
+Placenta segmentation dimension for subject ID= 243 : (62, 93, 46)
+Placenta segmentation dimension for subject ID= 244 : (105, 78, 35)
+Placenta segmentation dimension for subject ID= 245 : (115, 92, 37)
+Placenta segmentation dimension for subject ID= 246 : (97, 81, 21)
+Placenta segmentation dimension for subject ID= 247 : (68, 86, 37)
+Placenta segmentation dimension for subject ID= 248 : (84, 91, 33)
+Placenta segmentation dimension for subject ID= 249 : (113, 102, 47)
+Placenta segmentation dimension for subject ID= 250 : (91, 85, 31)
+Placenta segmentation dimension for subject ID= 251 : (55, 73, 36)
+Placenta segmentation dimension for subject ID= 252 : (83, 75, 51)
+Placenta segmentation dimension for subject ID= 253 : (129, 69, 53)
+Placenta segmentation dimension for subject ID= 254 : (79, 70, 38)
+Placenta segmentation dimension for subject ID= 255 : (108, 88, 35)
+Placenta segmentation dimension for subject ID= 256 : (111, 95, 27)
+Placenta segmentation dimension for subject ID= 257 : (126, 96, 27)
+Placenta segmentation dimension for subject ID= 258 : (130, 44, 54)
+Placenta segmentation dimension for subject ID= 259 : (61, 94, 30)
+Placenta segmentation dimension for subject ID= 260 : (105, 80, 47)
+Placenta segmentation dimension for subject ID= 261 : (96, 91, 42)
+Placenta segmentation dimension for subject ID= 262 : (115, 64, 33)
+Placenta segmentation dimension for subject ID= 263 : (131, 64, 30)
+Placenta segmentation dimension for subject ID= 264 : (127, 55, 39)
+Placenta segmentation dimension for subject ID= 265 : (139, 78, 46)
+Placenta segmentation dimension for subject ID= 266 : (123, 66, 28)
+Placenta segmentation dimension for subject ID= 267 : (73, 47, 38)
+Placenta segmentation dimension for subject ID= 268 : (73, 66, 42)
+Placenta segmentation dimension for subject ID= 269 : (46, 103, 45)
+Placenta segmentation dimension for subject ID= 270 : (112, 71, 56)
+Placenta segmentation dimension for subject ID= 271 : (130, 72, 53)
+Placenta segmentation dimension for subject ID= 272 : (141, 94, 60)
+Placenta segmentation dimension for subject ID= 273 : (94, 54, 43)
+Placenta segmentation dimension for subject ID= 274 : (103, 95, 39)
+Placenta segmentation dimension for subject ID= 275 : (114, 94, 26)
+Placenta segmentation dimension for subject ID= 276 : (117, 90, 30)
+Placenta segmentation dimension for subject ID= 277 : (60, 94, 41)
+Placenta segmentation dimension for subject ID= 278 : (77, 104, 47)
+Placenta segmentation dimension for subject ID= 279 : (130, 84, 32)
+Placenta segmentation dimension for subject ID= 280 : (139, 99, 41)
+Placenta segmentation dimension for subject ID= 281 : (58, 85, 44)
+Placenta segmentation dimension for subject ID= 282 : (67, 89, 50)
+Placenta segmentation dimension for subject ID= 283 : (100, 86, 36)
+Placenta segmentation dimension for subject ID= 284 : (102, 97, 44)
+Placenta segmentation dimension for subject ID= 285 : (115, 51, 45)
+Placenta segmentation dimension for subject ID= 286 : (116, 108, 40)
+Placenta segmentation dimension for subject ID= 287 : (85, 76, 47)
+Placenta segmentation dimension for subject ID= 288 : (97, 87, 32)
+Placenta segmentation dimension for subject ID= 289 : (109, 106, 34)
+Placenta segmentation dimension for subject ID= 290 : (100, 97, 35)
+Placenta segmentation dimension for subject ID= 291 : (75, 93, 37)
+Placenta segmentation dimension for subject ID= 292 : (90, 90, 48)
+Placenta segmentation dimension for subject ID= 293 : (98, 96, 31)
+Placenta segmentation dimension for subject ID= 294 : (103, 60, 44)
+Placenta segmentation dimension for subject ID= 295 : (105, 84, 48)
+Placenta segmentation dimension for subject ID= 296 : (94, 70, 31)
+Placenta segmentation dimension for subject ID= 297 : (117, 91, 40)
+Placenta segmentation dimension for subject ID= 298 : (75, 93, 24)
+Placenta segmentation dimension for subject ID= 299 : (118, 153, 29)
+Placenta segmentation dimension for subject ID= 300 : (112, 70, 57)
+Placenta segmentation dimension for subject ID= 301 : (86, 103, 66)
+Placenta segmentation dimension for subject ID= 302 : (116, 64, 53)
+Placenta segmentation dimension for subject ID= 303 : (129, 76, 58)
+Placenta segmentation dimension for subject ID= 304 : (104, 56, 37)
+Placenta segmentation dimension for subject ID= 305 : (119, 80, 42)
+Placenta segmentation dimension for subject ID= 306 : (62, 109, 46)
+Placenta segmentation dimension for subject ID= 307 : (75, 98, 42)
+Placenta segmentation dimension for subject ID= 308 : (91, 106, 52)
+Placenta segmentation dimension for subject ID= 309 : (91, 85, 37)
+Placenta segmentation dimension for subject ID= 310 : (79, 98, 45)
+Placenta segmentation dimension for subject ID= 311 : (101, 40, 45)
+Placenta segmentation dimension for subject ID= 312 : (94, 54, 48)
+Placenta segmentation dimension for subject ID= 313 : (103, 71, 46)
+Placenta segmentation dimension for subject ID= 314 : (103, 49, 47)
+Placenta segmentation dimension for subject ID= 315 : (81, 97, 49)
+Placenta segmentation dimension for subject ID= 316 : (49, 88, 29)
+Placenta segmentation dimension for subject ID= 317 : (65, 98, 48)
+Placenta segmentation dimension for subject ID= 318 : (95, 99, 36)
+Placenta segmentation dimension for subject ID= 319 : (87, 105, 45)
+Placenta segmentation dimension for subject ID= 320 : (111, 107, 38)
+Placenta segmentation dimension for subject ID= 321 : (64, 69, 40)
+Placenta segmentation dimension for subject ID= 322 : (75, 107, 33)
+Placenta segmentation dimension for subject ID= 323 : (101, 95, 33)
+Placenta segmentation dimension for subject ID= 324 : (130, 114, 28)
+Placenta segmentation dimension for subject ID= 325 : (99, 43, 36)
+Placenta segmentation dimension for subject ID= 326 : (119, 107, 34)
+Placenta segmentation dimension for subject ID= 327 : (92, 88, 27)
+Placenta segmentation dimension for subject ID= 328 : (95, 70, 38)
+Placenta segmentation dimension for subject ID= 329 : (122, 93, 36)
+Placenta segmentation dimension for subject ID= 330 : (106, 90, 28)
+Placenta segmentation dimension for subject ID= 331 : (111, 97, 26)
+Placenta segmentation dimension for subject ID= 332 : (90, 78, 26)
+Placenta segmentation dimension for subject ID= 333 : (98, 96, 31)
+Placenta segmentation dimension for subject ID= 334 : (101, 91, 34)
+Placenta segmentation dimension for subject ID= 335 : (112, 85, 41)
+Placenta segmentation dimension for subject ID= 336 : (73, 92, 48)
+Placenta segmentation dimension for subject ID= 337 : (76, 89, 54)
+Placenta segmentation dimension for subject ID= 338 : (132, 63, 41)
+Placenta segmentation dimension for subject ID= 339 : (68, 72, 41)
+Placenta segmentation dimension for subject ID= 340 : (68, 82, 44)
+Placenta segmentation dimension for subject ID= 341 : (108, 69, 25)
+Placenta segmentation dimension for subject ID= 342 : (112, 63, 29)
+Placenta segmentation dimension for subject ID= 343 : (109, 52, 43)
+Placenta segmentation dimension for subject ID= 344 : (99, 62, 46)
+Placenta segmentation dimension for subject ID= 345 : (89, 97, 49)
+Placenta segmentation dimension for subject ID= 346 : (95, 50, 37)
+Placenta segmentation dimension for subject ID= 347 : (74, 98, 32)
+Placenta segmentation dimension for subject ID= 348 : (94, 92, 24)
+Placenta segmentation dimension for subject ID= 349 : (79, 64, 38)
+Placenta segmentation dimension for subject ID= 350 : (67, 111, 29)
+Placenta segmentation dimension for subject ID= 351 : (87, 105, 32)
+Placenta segmentation dimension for subject ID= 352 : (130, 109, 29)
+Placenta segmentation dimension for subject ID= 353 : (84, 87, 31)
+Placenta segmentation dimension for subject ID= 354 : (88, 75, 42)
+Placenta segmentation dimension for subject ID= 355 : (100, 103, 43)
+Placenta segmentation dimension for subject ID= 356 : (88, 84, 49)
+Placenta segmentation dimension for subject ID= 357 : (118, 103, 26)
+Placenta segmentation dimension for subject ID= 358 : (96, 96, 22)
+Placenta segmentation dimension for subject ID= 359 : (84, 102, 19)
+Placenta segmentation dimension for subject ID= 360 : (93, 76, 38)
+Placenta segmentation dimension for subject ID= 361 : (97, 99, 47)
+Placenta segmentation dimension for subject ID= 362 : (66, 59, 30)
+Placenta segmentation dimension for subject ID= 363 : (86, 81, 42)
+Placenta segmentation dimension for subject ID= 364 : (93, 85, 33)
+Placenta segmentation dimension for subject ID= 365 : (97, 102, 28)
+Placenta segmentation dimension for subject ID= 366 : (115, 133, 27)
+Placenta segmentation dimension for subject ID= 367 : (98, 126, 16)
+Placenta segmentation dimension for subject ID= 368 : (88, 88, 21)
+..The number of subjects for training and image size:(369, 100, 100, 100)
+********************   Build Model   ********************
+********************   Model Fitting   ********************
+********************   Prediction   ********************
+**********   Training Data   **********
+2000_1: Dice=[0.932 0.761]
+2000_1: Precision=0.9827030909680708
+2000_1: Sensitivity=0.6212568984395885
+2000_1: Specificity=0.9958923199038148
+2000_2: Dice=[0.954 0.775]
+2000_2: Precision=0.9591152027721493
+2000_2: Sensitivity=0.6503307829774948
+2000_2: Specificity=0.9930310231469142
+2001_1: Dice=[0.954 0.76 ]
+2001_1: Precision=0.9739288233103263
+2001_1: Sensitivity=0.6225300747119159
+2001_1: Specificity=0.9959006946391303
+2001_2: Dice=[0.957 0.773]
+2001_2: Precision=0.9628101732171329
+2001_2: Sensitivity=0.6462853283458022
+2001_2: Specificity=0.9940496829799881
+2003_1: Dice=[0.944 0.769]
+2003_1: Precision=0.9702912659038428
+2003_1: Sensitivity=0.636814399728307
+2003_1: Specificity=0.9939916801841872
+2003_2: Dice=[0.957 0.858]
+2003_2: Precision=0.8598551313412452
+2003_2: Sensitivity=0.8551760599704274
+2003_2: Specificity=0.9577416882995027
+2004_1: Dice=[0.967 0.873]
+2004_1: Precision=0.8829675097686414
+2004_1: Sensitivity=0.8636841019935451
+2004_1: Specificity=0.9698399321774354
+2004_2: Dice=[0.974 0.88 ]
+2004_2: Precision=0.9145917316463146
+2004_2: Sensitivity=0.8481474811309943
+2004_2: Specificity=0.9822310755996537
+2007_1: Dice=[0.964 0.904]
+2007_1: Precision=0.9325079171277042
+2007_1: Sensitivity=0.8763724639448074
+2007_1: Specificity=0.9754701700960448
+2007_2: Dice=[0.965 0.81 ]
+2007_2: Precision=0.7969136691999724
+2007_2: Sensitivity=0.8239329416413492
+2007_2: Specificity=0.9616686789802124
+2008_1: Dice=[0.964 0.815]
+2008_1: Precision=0.7153458971001738
+2008_1: Sensitivity=0.9470390156574124
+2008_1: Specificity=0.9382625960737213
+2008_2: Dice=[0.916 0.653]
+2008_2: Precision=0.5186686727391021
+2008_2: Sensitivity=0.8795468180031583
+2008_2: Specificity=0.8615536485606113
+2009_1: Dice=[0.956 0.866]
+2009_1: Precision=0.979241645244216
+2009_1: Sensitivity=0.7760912748943106
+2009_1: Specificity=0.9937639456213851
+2010_1: Dice=[0.93  0.808]
+2010_1: Precision=0.7872588315466289
+2010_1: Sensitivity=0.8293776849711094
+2010_1: Specificity=0.9216297597983045
+2010_2: Dice=[0.953 0.834]
+2010_2: Precision=0.7784588852509402
+2010_2: Sensitivity=0.8974635327467076
+2010_2: Specificity=0.9348672948428973
+2011_1: Dice=[0.958 0.85 ]
+2011_1: Precision=0.8443958447238928
+2011_1: Sensitivity=0.8551771236612479
+2011_1: Specificity=0.9563991231821797
+2011_2: Dice=[0.962 0.877]
+2011_2: Precision=0.9063957230490352
+2011_2: Sensitivity=0.8486166510205504
+2011_2: Specificity=0.9717245785073466
+2015_1: Dice=[0.97 0.91]
+2015_1: Precision=0.8871806203263284
+2015_1: Sensitivity=0.9330289255356015
+2015_1: Specificity=0.9614384237758624
+2015_2: Dice=[0.959 0.857]
+2015_2: Precision=0.8444663402909104
+2015_2: Sensitivity=0.8700538995210955
+2015_2: Specificity=0.9548897136090793
+2016_1: Dice=[0.967 0.811]
+2016_1: Precision=0.7955938585005831
+2016_1: Sensitivity=0.8271971174685739
+2016_1: Specificity=0.9631853975822195
+2016_2: Dice=[0.934 0.714]
+2016_2: Precision=0.5990773276608731
+2016_2: Sensitivity=0.8831939555931935
+2016_2: Specificity=0.8947543270204935
+2017_1: Dice=[0.958 0.866]
+2017_1: Precision=0.836358338695383
+2017_1: Sensitivity=0.8970246750146488
+2017_1: Specificity=0.9474574619447639
+2017_2: Dice=[0.796 0.582]
+2017_2: Precision=0.4116659618355528
+2017_2: Sensitivity=0.990278563531897
+2017_2: Specificity=0.6622533700468084
+2019_1: Dice=[0.964 0.886]
+2019_1: Precision=0.913628943915967
+2019_1: Sensitivity=0.8591221855787631
+2019_1: Specificity=0.9735574437625101
+2020_1: Dice=[0.941 0.851]
+2020_1: Precision=0.8274094829503272
+2020_1: Sensitivity=0.8766125261429498
+2020_1: Specificity=0.9303326966923671
+2020_2: Dice=[0.935 0.815]
+2020_2: Precision=0.7510728394009151
+2020_2: Sensitivity=0.8906638357387795
+2020_2: Specificity=0.9081169963625492
+2021_1: Dice=[0.906 0.759]
+2021_1: Precision=0.6800441261111466
+2021_1: Sensitivity=0.8587285244180647
+2021_1: Specificity=0.8669967501179661
+2021_2: Dice=[0.959 0.872]
+2021_2: Precision=0.8954378237904791
+2021_2: Sensitivity=0.8499899883865284
+2021_2: Specificity=0.9669661064388436
+2022_1: Dice=[0.969 0.892]
+2022_1: Precision=0.9472546849320319
+2022_1: Sensitivity=0.8420458562806408
+2022_1: Specificity=0.9856146508926156
+2022_2: Dice=[0.964 0.893]
+2022_2: Precision=0.8857596443879981
+2022_2: Sensitivity=0.9007676722015483
+2022_2: Specificity=0.9617355145578926
+2023_1: Dice=[0.96  0.885]
+2023_1: Precision=0.844140800802721
+2023_1: Sensitivity=0.9310239603549502
+2023_1: Specificity=0.943981787783124
+2023_2: Dice=[0.947 0.871]
+2023_2: Precision=0.9122282696440552
+2023_2: Sensitivity=0.8333546376141827
+2023_2: Specificity=0.9647947825361168
+2024_1: Dice=[0.971 0.873]
+2024_1: Precision=0.8972611957874903
+2024_1: Sensitivity=0.8497841084715517
+2024_1: Specificity=0.9774291589001505
+2024_2: Dice=[0.953 0.851]
+2024_2: Precision=0.8161051444656809
+2024_2: Sensitivity=0.8897059785096227
+2024_2: Specificity=0.9403175468306958
+2025_1: Dice=[0.971 0.903]
+2025_1: Precision=0.9047441634789088
+2025_1: Sensitivity=0.901140864882591
+2025_1: Specificity=0.9713789593437518
+2026_1: Dice=[0.969 0.855]
+2026_1: Precision=0.781355993453896
+2026_1: Sensitivity=0.9451167728237791
+2026_1: Specificity=0.9495725478055866
+2026_2: Dice=[0.945 0.734]
+2026_2: Precision=0.6903788003738524
+2026_2: Sensitivity=0.7831181789834737
+2026_2: Specificity=0.9329280057166677
+2027_1: Dice=[0.959 0.876]
+2027_1: Precision=0.8243452564459249
+2027_1: Sensitivity=0.9353300258935846
+2027_1: Specificity=0.9389729864586149
+2027_2: Dice=[0.973 0.887]
+2027_2: Precision=0.9223364690439728
+2027_2: Sensitivity=0.8550116734596969
+2027_2: Specificity=0.9817568109576954
+2028_1: Dice=[0.963 0.828]
+2028_1: Precision=0.7812437824321781
+2028_1: Sensitivity=0.8799437936840575
+2028_1: Specificity=0.9512740539517591
+2028_2: Dice=[0.965 0.847]
+2028_2: Precision=0.7898995340855806
+2028_2: Sensitivity=0.9118802188309819
+2028_2: Specificity=0.9490312821443698
+2030_1: Dice=[0.947 0.831]
+2030_1: Precision=0.8029278269868562
+2030_1: Sensitivity=0.8608114128962933
+2030_1: Specificity=0.9372699613262678
+2031_1: Dice=[0.967 0.874]
+2031_1: Precision=0.8344603273634762
+2031_1: Sensitivity=0.9181022082018927
+2031_1: Specificity=0.9549992205767732
+2031_2: Dice=[0.96  0.778]
+2031_2: Precision=0.8010478991312578
+2031_2: Sensitivity=0.7560040324638865
+2031_2: Specificity=0.965102600347219
+2032_1: Dice=[0.959 0.866]
+2032_1: Precision=0.864361488471995
+2032_1: Sensitivity=0.8676595419588137
+2032_1: Specificity=0.9580317849050483
+2032_2: Dice=[0.96  0.824]
+2032_2: Precision=0.9260754064587637
+2032_2: Sensitivity=0.741642143856433
+2032_2: Specificity=0.9845189287381262
+2033_1: Dice=[0.959 0.774]
+2033_1: Precision=0.7614078833796873
+2033_1: Sensitivity=0.786329301146268
+2033_1: Specificity=0.9560227304867586
+2033_2: Dice=[0.941 0.755]
+2033_2: Precision=0.646229399402721
+2033_2: Sensitivity=0.9091101470743836
+2033_2: Specificity=0.9047326865499152
+2034_1: Dice=[0.939 0.703]
+2034_1: Precision=0.9160339232135203
+2034_1: Sensitivity=0.570166746069557
+2034_1: Specificity=0.9861156815592963
+2034_2: Dice=[0.936 0.843]
+2034_2: Precision=0.7732294667043517
+2034_2: Sensitivity=0.9254812078087941
+2034_2: Specificity=0.903098334672254
+2036_1: Dice=[0.974 0.882]
+2036_1: Precision=0.9344471738764323
+2036_1: Sensitivity=0.8344301145527051
+2036_1: Specificity=0.986015216257435
+2037_1: Dice=[0.949 0.88 ]
+2037_1: Precision=0.8968362246998343
+2037_1: Sensitivity=0.8647126361369899
+2037_1: Specificity=0.956381264744807
+2039_1: Dice=[0.963 0.879]
+2039_1: Precision=0.9357940531340729
+2039_1: Sensitivity=0.8287002708104971
+2039_1: Specificity=0.9812344385095019
+2040_1: Dice=[0.932 0.831]
+2040_1: Precision=0.975015309246785
+2040_1: Sensitivity=0.7243462595308718
+2040_1: Specificity=0.9908695146222037
+2040_2: Dice=[0.934 0.79 ]
+2040_2: Precision=0.7173909753384438
+2040_2: Sensitivity=0.8789973389706359
+2040_2: Specificity=0.9047640298153499
+2041_1: Dice=[0.973 0.886]
+2041_1: Precision=0.9096565727135777
+2041_1: Sensitivity=0.8628080347898116
+2041_1: Specificity=0.9794853998314412
+2041_2: Dice=[0.925 0.647]
+2041_2: Precision=0.5818078680280869
+2041_2: Sensitivity=0.7280104360504154
+2041_2: Specificity=0.9030000509708767
+2042_1: Dice=[0.949 0.807]
+2042_1: Precision=0.7043706967316101
+2042_1: Sensitivity=0.9447583952184611
+2042_1: Specificity=0.9141246401989338
+2042_2: Dice=[0.949 0.846]
+2042_2: Precision=0.7698178842576114
+2042_2: Sensitivity=0.9378268916127994
+2042_2: Specificity=0.9191951070588508
+2044_1: Dice=[0.97  0.879]
+2044_1: Precision=0.9268492009511607
+2044_1: Sensitivity=0.8364133796450492
+2044_1: Specificity=0.9824341947001254
+2044_2: Dice=[0.917 0.691]
+2044_2: Precision=0.5559273149013608
+2044_2: Sensitivity=0.9131459223702515
+2044_2: Specificity=0.8614993419972348
+2045_1: Dice=[0.96  0.891]
+2045_1: Precision=0.9455567485631277
+2045_1: Sensitivity=0.8423243956043956
+2045_1: Specificity=0.9807273362445414
+2045_2: Dice=[0.819 0.374]
+2045_2: Precision=0.9578916103089015
+2045_2: Sensitivity=0.23268721122226693
+2045_2: Specificity=0.9942374285736619
+2046_1: Dice=[0.973 0.915]
+2046_1: Precision=0.9396236614497528
+2046_1: Sensitivity=0.891192447763016
+2046_1: Specificity=0.9813416065071694
+2046_2: Dice=[0.939 0.849]
+2046_2: Precision=0.8216702851935241
+2046_2: Sensitivity=0.8780078263453545
+2046_2: Specificity=0.9261468570960764
+2047_2: Dice=[0.968 0.889]
+2047_2: Precision=0.8366451493370052
+2047_2: Sensitivity=0.9478216069494865
+2047_2: Specificity=0.9509168455906262
+2047_3: Dice=[0.954 0.839]
+2047_3: Precision=0.7841462691372459
+2047_3: Sensitivity=0.9009510644718526
+2047_3: Specificity=0.9358702957412157
+2048_1: Dice=[0.945 0.829]
+2048_1: Precision=0.7445877621480046
+2048_1: Sensitivity=0.9344423797028639
+2048_1: Specificity=0.912636703986399
+2049_1: Dice=[0.975 0.919]
+2049_1: Precision=0.9376905528890729
+2049_1: Sensitivity=0.9012691596687419
+2049_1: Specificity=0.980956535721158
+2049_2: Dice=[0.965 0.898]
+2049_2: Precision=0.9172373743441868
+2049_2: Sensitivity=0.8790093226226161
+2049_2: Specificity=0.9720535911101614
+2050_1: Dice=[0.973 0.853]
+2050_1: Precision=0.8417729189123682
+2050_1: Sensitivity=0.8640604437693552
+2050_1: Specificity=0.970721015788486
+2050_2: Dice=[0.963 0.779]
+2050_2: Precision=0.8189827647670807
+2050_2: Sensitivity=0.7422719839637073
+2050_2: Specificity=0.9706710956875985
+2051_1: Dice=[0.967 0.874]
+2051_1: Precision=0.8783690393918452
+2051_1: Sensitivity=0.8699354319929927
+2051_1: Specificity=0.9681849841923564
+2051_2: Dice=[0.947 0.821]
+2051_2: Precision=0.7447137555951484
+2051_2: Sensitivity=0.9140493522758405
+2051_2: Specificity=0.9194964253034219
+2052_1: Dice=[0.97  0.848]
+2052_1: Precision=0.9249614019345218
+2052_1: Sensitivity=0.7836472081076398
+2052_1: Specificity=0.9861491864032337
+2052_2: Dice=[0.958 0.817]
+2052_2: Precision=0.7917642284037338
+2052_2: Sensitivity=0.8445221445221445
+2052_2: Specificity=0.9511844063330975
+2053_1: Dice=[0.969 0.901]
+2053_1: Precision=0.9430385092394614
+2053_1: Sensitivity=0.8617545028394089
+2053_1: Specificity=0.9830012920822156
+2053_2: Dice=[0.966 0.872]
+2053_2: Precision=0.9612266128568516
+2053_2: Sensitivity=0.7976695558621169
+2053_2: Specificity=0.9903610981876213
+2054_1: Dice=[0.969 0.882]
+2054_1: Precision=0.9083321810244356
+2054_1: Sensitivity=0.8574505379752736
+2054_1: Specificity=0.9763689509250253
+2054_2: Dice=[0.969 0.903]
+2054_2: Precision=0.9487000357926785
+2054_2: Sensitivity=0.8612090867452995
+2054_2: Specificity=0.9840225854239669
+2055_1: Dice=[0.97  0.913]
+2055_1: Precision=0.910962672812833
+2055_1: Sensitivity=0.9151777776059746
+2055_1: Specificity=0.9687848203036263
+2055_2: Dice=[0.91 0.8 ]
+2055_2: Precision=0.7260176658633171
+2055_2: Sensitivity=0.8906795256393173
+2055_2: Specificity=0.8707859801944011
+2056_1: Dice=[0.972 0.81 ]
+2056_1: Precision=0.7722270691134099
+2056_1: Sensitivity=0.8525719373507629
+2056_1: Specificity=0.9645526581513026
+2056_2: Dice=[0.914 0.504]
+2056_2: Precision=0.3553413769305823
+2056_2: Sensitivity=0.8688856560954321
+2056_2: Specificity=0.8518217870524848
+2057_1: Dice=[0.964 0.836]
+2057_1: Precision=0.7750690844958498
+2057_1: Sensitivity=0.9063048912815409
+2057_1: Specificity=0.9473435326508984
+2059_1: Dice=[0.943 0.755]
+2059_1: Precision=0.710342826845933
+2059_1: Sensitivity=0.806340987031864
+2059_1: Specificity=0.9297102962096238
+2059_2: Dice=[0.846 0.508]
+2059_2: Precision=0.3475072304090346
+2059_2: Sensitivity=0.9420897472795016
+2059_2: Specificity=0.739038532817558
+2060_1: Dice=[0.97 0.88]
+2060_1: Precision=0.8895063244504482
+2060_1: Sensitivity=0.8701079639019165
+2060_1: Specificity=0.9730146173946621
+2060_2: Dice=[0.97  0.904]
+2060_2: Precision=0.8734929647809195
+2060_2: Sensitivity=0.9361779610819824
+2060_2: Specificity=0.959975909388215
+2062_1: Dice=[0.956 0.823]
+2062_1: Precision=0.7340306313036982
+2062_1: Sensitivity=0.9354835009148632
+2062_1: Specificity=0.9284254841901661
+2062_2: Dice=[0.881 0.671]
+2062_2: Precision=0.5138373694131639
+2062_2: Sensitivity=0.9651990022774103
+2062_2: Specificity=0.7935027832953235
+2063_1: Dice=[0.924 0.639]
+2063_1: Precision=0.5916735269904739
+2063_1: Sensitivity=0.6934310685085988
+2063_1: Specificity=0.9091083253508808
+2063_2: Dice=[0.959 0.824]
+2063_2: Precision=0.7935897239381352
+2063_2: Sensitivity=0.8559359862449782
+2063_2: Specificity=0.9506462123368588
+2064_1: Dice=[0.957 0.888]
+2064_1: Precision=0.8975653913954929
+2064_1: Sensitivity=0.8778972649388823
+2064_1: Specificity=0.9612360095973815
+2065_1: Dice=[0.966 0.886]
+2065_1: Precision=0.8986617799746199
+2065_1: Sensitivity=0.8744807992884468
+2065_1: Specificity=0.9702769672850127
+2065_2: Dice=[0.961 0.869]
+2065_2: Precision=0.8534020909017174
+2065_2: Sensitivity=0.8842533616418967
+2065_2: Specificity=0.9556271966094687
+2066_1: Dice=[0.971 0.841]
+2066_1: Precision=0.806337321594301
+2066_1: Sensitivity=0.8785468806580988
+2066_1: Specificity=0.9638219434679062
+2066_2: Dice=[0.944 0.813]
+2066_2: Precision=0.7258238507847027
+2066_2: Sensitivity=0.9238742064077956
+2066_2: Specificity=0.9110063879720385
+2067_1: Dice=[0.897 0.764]
+2067_1: Precision=0.6474496638657815
+2067_1: Sensitivity=0.9304747418656494
+2067_1: Specificity=0.8324479764094075
+2069_1: Dice=[0.939 0.845]
+2069_1: Precision=0.7831911546821051
+2069_1: Sensitivity=0.9177989987800261
+2069_1: Specificity=0.9100429372839426
+2069_2: Dice=[0.898 0.792]
+2069_2: Precision=0.7343808719190527
+2069_2: Sensitivity=0.8592265427160265
+2069_2: Specificity=0.8652285115424206
+2070_1: Dice=[0.973 0.882]
+2070_1: Precision=0.9072243387935359
+2070_1: Sensitivity=0.8581680496085866
+2070_1: Specificity=0.9791811783104178
+2070_2: Dice=[0.87  0.609]
+2070_2: Precision=0.4523270500202559
+2070_2: Sensitivity=0.9312914364217331
+2070_2: Specificity=0.7803259218901032
+2071_1: Dice=[0.945 0.838]
+2071_1: Precision=0.7780748663101604
+2071_1: Sensitivity=0.9082623161962005
+2071_1: Specificity=0.9213362448261252
+2071_2: Dice=[0.958 0.827]
+2071_2: Precision=0.8091868348522341
+2071_2: Sensitivity=0.8455603731441335
+2071_2: Specificity=0.953145821112106
+2072_1: Dice=[0.954 0.82 ]
+2072_1: Precision=0.7476650996194314
+2072_1: Sensitivity=0.9078262098659389
+2072_1: Specificity=0.9309371683736616
+2072_2: Dice=[0.821 0.635]
+2072_2: Precision=0.47380571511670183
+2072_2: Sensitivity=0.9605763826827224
+2072_2: Specificity=0.7042157456298329
+2073_1: Dice=[0.953 0.859]
+2073_1: Precision=0.91012930030451
+2073_1: Sensitivity=0.8132952352117473
+2073_1: Specificity=0.9711594655938677
+2073_2: Dice=[0.964 0.834]
+2073_2: Precision=0.9296861463825152
+2073_2: Sensitivity=0.7568091719180532
+2073_2: Specificity=0.9858224961040873
+2074_1: Dice=[0.96  0.876]
+2074_1: Precision=0.8767414716521941
+2074_1: Sensitivity=0.8743818573586837
+2074_1: Specificity=0.9606990242061282
+2074_2: Dice=[0.974 0.889]
+2074_2: Precision=0.9240780561229975
+2074_2: Sensitivity=0.8573972377261369
+2074_2: Specificity=0.9823354967336366
+2075_1: Dice=[0.96 0.92]
+2075_1: Precision=0.9206651544967027
+2075_1: Sensitivity=0.9185678102003807
+2075_1: Specificity=0.9603727574900396
+2075_2: Dice=[0.893 0.735]
+2075_2: Precision=0.5994343487067181
+2075_2: Sensitivity=0.9503910694929815
+2075_2: Specificity=0.818423451863987
+2076_1: Dice=[0.971 0.892]
+2076_1: Precision=0.8717474525178924
+2076_1: Sensitivity=0.9137263453756875
+2076_1: Specificity=0.9650473448456174
+2076_2: Dice=[0.975 0.901]
+2076_2: Precision=0.9311697078693374
+2076_2: Sensitivity=0.8730691739422431
+2076_2: Specificity=0.9831569841708184
+2077_1: Dice=[0.936 0.81 ]
+2077_1: Precision=0.7437893698990304
+2077_1: Sensitivity=0.8895114484481381
+2077_1: Specificity=0.9090007094525802
+2077_2: Dice=[0.897 0.72 ]
+2077_2: Precision=0.5736919883080769
+2077_2: Sensitivity=0.9651732865655579
+2077_2: Specificity=0.8199018631488868
+2078_1: Dice=[0.974 0.904]
+2078_1: Precision=0.8841774745284365
+2078_1: Sensitivity=0.9245070476777324
+2078_1: Specificity=0.9682470161762627
+2078_2: Dice=[0.963 0.902]
+2078_2: Precision=0.8826269693551085
+2078_2: Sensitivity=0.9231616757551506
+2078_2: Specificity=0.9549036364506491
+2079_1: Dice=[0.967 0.859]
+2079_1: Precision=0.8591710968287973
+2079_1: Sensitivity=0.8589938863150769
+2079_1: Specificity=0.9671692259124249
+2080_1: Dice=[0.951 0.866]
+2080_1: Precision=0.8610906657745065
+2080_1: Sensitivity=0.8717390977104063
+2080_1: Specificity=0.9491090543610304
+2081_1: Dice=[0.96 0.9 ]
+2081_1: Precision=0.9262539653765974
+2081_1: Sensitivity=0.8750770664072669
+2081_1: Specificity=0.9712715593946138
+2082_1: Dice=[0.97  0.882]
+2082_1: Precision=0.894472062336424
+2082_1: Sensitivity=0.8694959520717572
+2082_1: Specificity=0.9731994546305324
+2082_2: Dice=[0.951 0.839]
+2082_2: Precision=0.8874423984117443
+2082_2: Sensitivity=0.7959039490341814
+2082_2: Specificity=0.9672652390979036
+2083_1: Dice=[0.575 0.179]
+2083_1: Precision=0.09940020770192654
+2083_1: Sensitivity=0.8886977815351427
+2083_1: Specificity=0.4069008389575196
+2084_1: Dice=[0.966 0.897]
+2084_1: Precision=0.9380348480927057
+2084_1: Sensitivity=0.8601471410088576
+2084_1: Specificity=0.9799067077809392
+2084_2: Dice=[0.961 0.86 ]
+2084_2: Precision=0.8965074547085886
+2084_2: Sensitivity=0.825940712470431
+2084_2: Specificity=0.9719312007000049
+2085_1: Dice=[0.966 0.798]
+2085_1: Precision=0.7767530415760833
+2085_1: Sensitivity=0.8206342639485285
+2085_1: Specificity=0.9615424874913643
+2085_2: Dice=[0.972 0.863]
+2085_2: Precision=0.8229522421599492
+2085_2: Sensitivity=0.906096702085311
+2085_2: Specificity=0.9619583729226797
+2086_1: Dice=[0.946 0.859]
+2086_1: Precision=0.8225597706587993
+2086_1: Sensitivity=0.898191308708387
+2086_1: Specificity=0.9307763199148718
+2086_2: Dice=[0.95  0.842]
+2086_2: Precision=0.7749966258555866
+2086_2: Sensitivity=0.9206075819484398
+2086_2: Specificity=0.9253555108661724
+2087_1: Dice=[0.967 0.849]
+2087_1: Precision=0.8058725611442467
+2087_1: Sensitivity=0.8976274063052172
+2087_1: Specificity=0.9550674435232961
+2087_2: Dice=[0.973 0.822]
+2087_2: Precision=0.8312738972302527
+2087_2: Sensitivity=0.8130819809205275
+2087_2: Specificity=0.9750001439354248
+2088_1: Dice=[0.966 0.877]
+2088_1: Precision=0.8641827679526717
+2088_1: Sensitivity=0.8905288027239247
+2088_1: Specificity=0.9614709201859374
+2088_2: Dice=[0.757 0.555]
+2088_2: Precision=0.39068847243624794
+2088_2: Sensitivity=0.9608072292691514
+2088_2: Specificity=0.6147847009043391
+2089_1: Dice=[0.968 0.871]
+2089_1: Precision=0.904283403766891
+2089_1: Sensitivity=0.8396219560046698
+2089_1: Specificity=0.9768816574236141
+2089_2: Dice=[0.901 0.672]
+2089_2: Precision=0.5530407176972463
+2089_2: Sensitivity=0.8570330430581027
+2089_2: Specificity=0.8457610830030053
+2090_1: Dice=[0.975 0.899]
+2090_1: Precision=0.9504585592398888
+2090_1: Sensitivity=0.8536591199360928
+2090_1: Specificity=0.9882394142717528
+2090_2: Dice=[0.976 0.902]
+2090_2: Precision=0.9554468405379757
+2090_2: Sensitivity=0.8535907968016839
+2090_2: Specificity=0.9897215158656563
+2091_1: Dice=[0.946 0.664]
+2091_1: Precision=0.9503691720590676
+2091_1: Sensitivity=0.5106963940418939
+2091_1: Specificity=0.9941673054681816
+2091_2: Dice=[0.897 0.62 ]
+2091_2: Precision=0.4645822007891276
+2091_2: Sensitivity=0.9325495441585413
+2091_2: Specificity=0.8220640942706785
+2094_1: Dice=[0.92  0.832]
+2094_1: Precision=0.8121142781041627
+2094_1: Sensitivity=0.8528535782965941
+2094_1: Specificity=0.9094317875093924
+2095_1: Dice=[0.945 0.885]
+2095_1: Precision=0.9030631511139741
+2095_1: Sensitivity=0.8671454601963521
+2095_1: Specificity=0.9545290809658625
+2095_2: Dice=[0.953 0.828]
+2095_2: Precision=0.8710370218858662
+2095_2: Sensitivity=0.7892235597288901
+2095_2: Specificity=0.9657592167328699
+2096_1: Dice=[0.97  0.891]
+2096_1: Precision=0.8393705785928892
+2096_1: Sensitivity=0.9490580508141273
+2096_1: Specificity=0.9536236869062205
+2096_2: Dice=[0.909 0.747]
+2096_2: Precision=0.6061622940817571
+2096_2: Sensitivity=0.9724835499483386
+2096_2: Specificity=0.8397823299123378
+2097_1: Dice=[0.968 0.903]
+2097_1: Precision=0.9392659886168457
+2097_1: Sensitivity=0.8702657794350529
+2097_1: Specificity=0.9805990140151851
+2097_2: Dice=[0.955 0.885]
+2097_2: Precision=0.842171870570607
+2097_2: Sensitivity=0.9326563714644501
+2097_2: Specificity=0.9361483386853661
+2098_1: Dice=[0.857 0.263]
+2098_1: Precision=0.42904906774300433
+2098_1: Sensitivity=0.18988202359528095
+2098_1: Specificity=0.9266215457671736
+2098_2: Dice=[0.921 0.724]
+2098_2: Precision=0.6071762364894403
+2098_2: Sensitivity=0.8955249598408084
+2098_2: Specificity=0.8728982515355004
+2099_2: Dice=[0.969 0.891]
+2099_2: Precision=0.855923469942385
+2099_2: Sensitivity=0.9290518376574646
+2099_2: Specificity=0.9579585523652914
+2099_3: Dice=[0.95  0.832]
+2099_3: Precision=0.7595136230578698
+2099_3: Sensitivity=0.9198122685650314
+2099_3: Specificity=0.9230370503351547
+2100_1: Dice=[0.941 0.787]
+2100_1: Precision=0.6851823635080516
+2100_1: Sensitivity=0.9256967956878572
+2100_1: Specificity=0.9037128788761413
+2101_1: Dice=[0.967 0.834]
+2101_1: Precision=0.8596714113032539
+2101_1: Sensitivity=0.8097758207030366
+2101_1: Specificity=0.9725147095949682
+2101_2: Dice=[0.97  0.859]
+2101_2: Precision=0.9264512804152301
+2101_2: Sensitivity=0.8011693424305769
+2101_2: Specificity=0.9852276844136544
+2102_1: Dice=[0.922 0.785]
+2102_1: Precision=0.6748182483216697
+2102_1: Sensitivity=0.9392336629648819
+2102_1: Specificity=0.8708785594478398
+2102_2: Dice=[0.951 0.853]
+2102_2: Precision=0.7783212714114267
+2102_2: Sensitivity=0.9426769267362319
+2102_2: Specificity=0.9211419315860492
+2103_1: Dice=[0.975 0.84 ]
+2103_1: Precision=0.8267731521810742
+2103_1: Sensitivity=0.8539080338106543
+2103_1: Specificity=0.972728969937792
+2103_2: Dice=[0.97 0.83]
+2103_2: Precision=0.7610012235537165
+2103_2: Sensitivity=0.9128590920824575
+2103_2: Specificity=0.9550320158720059
+2104_1: Dice=[0.937 0.772]
+2104_1: Precision=0.7025386336812092
+2104_1: Sensitivity=0.8555333463840836
+2104_1: Specificity=0.9127469642108189
+2104_2: Dice=[0.953 0.868]
+2104_2: Precision=0.9070436147397932
+2104_2: Sensitivity=0.8329030459942938
+2104_2: Specificity=0.9679973161523083
+2105_1: Dice=[0.932 0.696]
+2105_1: Precision=0.5393049595318196
+2105_1: Sensitivity=0.980976621126085
+2105_1: Specificity=0.875599778578631
+2105_2: Dice=[0.97  0.733]
+2105_2: Precision=0.7655152526313621
+2105_2: Sensitivity=0.7028243459185507
+2105_2: Specificity=0.9745393020449744
+2106_1: Dice=[0.945 0.866]
+2106_1: Precision=0.7856557134260602
+2106_1: Sensitivity=0.9653371847572492
+2106_1: Specificity=0.9069706389019325
+2106_2: Dice=[0.945 0.865]
+2106_2: Precision=0.7830778889371285
+2106_2: Sensitivity=0.9668948494957481
+2106_2: Specificity=0.9062379759823411
+2107_1: Dice=[0.94  0.803]
+2107_1: Precision=0.6946277341923417
+2107_1: Sensitivity=0.952059532650383
+2107_1: Specificity=0.8975792940520437
+2107_2: Dice=[0.952 0.833]
+2107_2: Precision=0.7526199399995122
+2107_2: Sensitivity=0.9325130199151817
+2107_2: Specificity=0.9240696330936867
+2108_1: Dice=[0.957 0.744]
+2108_1: Precision=0.7135428457287436
+2108_1: Sensitivity=0.7773836467038069
+2108_1: Specificity=0.950097663499369
+2108_2: Dice=[0.884 0.508]
+2108_2: Precision=0.4032800935267662
+2108_2: Sensitivity=0.685065692295732
+2108_2: Specificity=0.8329343849263896
+2109_1: Dice=[0.952 0.9  ]
+2109_1: Precision=0.8977506373245624
+2109_1: Sensitivity=0.9016780705284994
+2109_1: Specificity=0.9510051550198668
+2109_2: Dice=[0.967 0.902]
+2109_2: Precision=0.9005088366362378
+2109_2: Sensitivity=0.9039731110254433
+2109_2: Specificity=0.9668817645304244
+2110_1: Dice=[0.976 0.884]
+2110_1: Precision=0.8974197163162395
+2110_1: Sensitivity=0.8718886087554435
+2110_1: Specificity=0.9789298347628047
+2110_2: Dice=[0.965 0.876]
+2110_2: Precision=0.8477316296720044
+2110_2: Sensitivity=0.9068096675043675
+2110_2: Specificity=0.955633001748265
+2111_1: Dice=[0.969 0.913]
+2111_1: Precision=0.9417909867909868
+2111_1: Sensitivity=0.8866946604534116
+2111_1: Specificity=0.9793794711301586
+2111_2: Dice=[0.947 0.855]
+2111_2: Precision=0.7841821818741345
+2111_2: Sensitivity=0.9389554878647932
+2111_2: Specificity=0.9164845081455292
+2112_1: Dice=[0.963 0.855]
+2112_1: Precision=0.7682295967327992
+2112_1: Sensitivity=0.9628763552144287
+2112_1: Specificity=0.93677046828843
+2115_1: Dice=[0.965 0.822]
+2115_1: Precision=0.7657113121447442
+2115_1: Sensitivity=0.8880804891960365
+2115_1: Specificity=0.9517546648579523
+2116_1: Dice=[0.946 0.848]
+2116_1: Precision=0.800314227984267
+2116_1: Sensitivity=0.901948946515397
+2116_1: Specificity=0.9262599575146043
+2117_1: Dice=[0.968 0.883]
+2117_1: Precision=0.9422114204104132
+2117_1: Sensitivity=0.8307728335166996
+2117_1: Specificity=0.9850945549628591
+2117_2: Dice=[0.956 0.851]
+2117_2: Precision=0.9247821660556642
+2117_2: Sensitivity=0.7881622095036357
+2117_2: Specificity=0.9791428931167704
+2118_1: Dice=[0.919 0.76 ]
+2118_1: Precision=0.6353293868390696
+2118_1: Sensitivity=0.9463969198046321
+2118_1: Specificity=0.8615503152230655
+2119_1: Dice=[0.974 0.894]
+2119_1: Precision=0.9129325073635001
+2119_1: Sensitivity=0.875456089740368
+2119_1: Specificity=0.9792603486029168
+2119_2: Dice=[0.947 0.817]
+2119_2: Precision=0.7594890389541266
+2119_2: Sensitivity=0.884374031608305
+2119_2: Specificity=0.9271051782545572
+2120_1: Dice=[0.942 0.796]
+2120_1: Precision=0.6909675022919104
+2120_1: Sensitivity=0.937476209113183
+2120_1: Specificity=0.9038635293597007
+2120_2: Dice=[0.961 0.847]
+2120_2: Precision=0.8380353402125844
+2120_2: Sensitivity=0.856976386698799
+2120_2: Specificity=0.958161621576934
+2121_1: Dice=[0.949 0.824]
+2121_1: Precision=0.7218571283278961
+2121_1: Sensitivity=0.9604748843237166
+2121_1: Specificity=0.9119844925352997
+2121_2: Dice=[0.836 0.579]
+2121_2: Precision=0.42566122590181465
+2121_2: Sensitivity=0.9033705990322043
+2121_2: Specificity=0.7328159861498884
+2122_1: Dice=[0.959 0.871]
+2122_1: Precision=0.8138149291611535
+2122_1: Sensitivity=0.9367791009414552
+2122_1: Specificity=0.9379408707673182
+2122_2: Dice=[0.957 0.88 ]
+2122_2: Precision=0.8592326841954908
+2122_2: Sensitivity=0.9019515443722227
+2122_2: Specificity=0.9489497853286134
+2123_1: Dice=[0.964 0.887]
+2123_1: Precision=0.8327864528790735
+2123_1: Sensitivity=0.9486096507117422
+2123_1: Specificity=0.9442748308675455
+2123_2: Dice=[0.928 0.742]
+2123_2: Precision=0.7039212201855938
+2123_2: Sensitivity=0.7853878628733915
+2123_2: Specificity=0.9138806348357881
+2124_1: Dice=[0.952 0.858]
+2124_1: Precision=0.856026529853991
+2124_1: Sensitivity=0.8597544273345481
+2124_1: Specificity=0.9513099202110951
+2124_2: Dice=[0.96  0.859]
+2124_2: Precision=0.8090236978206239
+2124_2: Sensitivity=0.9165298250046153
+2124_2: Specificity=0.9439248217627045
+2125_1: Dice=[0.956 0.844]
+2125_1: Precision=0.7811761922266023
+2125_1: Sensitivity=0.9174672489082969
+2125_1: Specificity=0.9351380122232241
+2125_2: Dice=[0.907 0.76 ]
+2125_2: Precision=0.6410804825808638
+2125_2: Sensitivity=0.9319035347716339
+2125_2: Specificity=0.8464371047447456
+2126_1: Dice=[0.948 0.826]
+2126_1: Precision=0.75086322843502
+2126_1: Sensitivity=0.9178921863206527
+2126_1: Specificity=0.9200119192972666
+2127_1: Dice=[0.974 0.82 ]
+2127_1: Precision=0.7755535792345608
+2127_1: Sensitivity=0.8707963104002708
+2127_1: Specificity=0.9662293185761428
+2127_2: Dice=[0.976 0.856]
+2127_2: Precision=0.8092501871576985
+2127_2: Sensitivity=0.9095075724027987
+2127_2: Specificity=0.9664005422737557
+2129_1: Dice=[0.951 0.859]
+2129_1: Precision=0.8071256108913195
+2129_1: Sensitivity=0.9178672444878178
+2129_1: Specificity=0.9300396216162032
+2129_2: Dice=[0.965 0.842]
+2129_2: Precision=0.8146644463827876
+2129_2: Sensitivity=0.8708128023145427
+2129_2: Specificity=0.9574026283303687
+2131_1: Dice=[0.899 0.658]
+2131_1: Precision=0.5696737756175854
+2131_1: Sensitivity=0.7792195015869893
+2131_1: Specificity=0.8591081305840987
+2131_2: Dice=[0.959 0.792]
+2131_2: Precision=0.7910200355547014
+2131_2: Sensitivity=0.7933595561793354
+2131_2: Specificity=0.9582775271077367
+2131_3: Dice=[0.924 0.768]
+2131_3: Precision=0.6427788542129713
+2131_3: Sensitivity=0.9546043248854778
+2131_3: Specificity=0.8686672480279253
+2132_1: Dice=[0.97  0.799]
+2132_1: Precision=0.8116824607736524
+2132_1: Sensitivity=0.7865654003357144
+2132_1: Specificity=0.9720417137077941
+2132_2: Dice=[0.68  0.196]
+2132_2: Precision=0.10985089818115111
+2132_2: Sensitivity=0.8903294911352336
+2132_2: Specificity=0.5186106124173155
+2133_1: Dice=[0.946 0.774]
+2133_1: Precision=0.6772018236365779
+2133_1: Sensitivity=0.9033588044687334
+2133_1: Specificity=0.9146544865465909
+2133_2: Dice=[0.96  0.829]
+2133_2: Precision=0.7862326103516016
+2133_2: Sensitivity=0.8772632214630001
+2133_2: Specificity=0.9480540989475889
+2134_1: Dice=[0.955 0.792]
+2134_1: Precision=0.854634651715522
+2134_1: Sensitivity=0.7372009525361538
+2134_1: Specificity=0.9705435240333378
+2135_1: Dice=[0.934 0.856]
+2135_1: Precision=0.79397617720526
+2135_1: Sensitivity=0.9278698355367457
+2135_1: Specificity=0.9015840100078327
+2135_2: Dice=[0.97  0.882]
+2135_2: Precision=0.8442727603142502
+2135_2: Sensitivity=0.9239045632785848
+2135_2: Specificity=0.9584271997074231
+2136_1: Dice=[0.939 0.818]
+2136_1: Precision=0.7270469262840416
+2136_1: Sensitivity=0.9358386466192886
+2136_1: Specificity=0.9015110389577135
+2136_2: Dice=[0.934 0.743]
+2136_2: Precision=0.6069044000031832
+2136_2: Sensitivity=0.9589271905393596
+2136_2: Specificity=0.8825220794324453
+2137_1: Dice=[0.949 0.873]
+2137_1: Precision=0.8179787883286325
+2137_1: Sensitivity=0.9351083287764222
+2137_1: Specificity=0.9249123952996251
+2137_2: Dice=[0.954 0.856]
+2137_2: Precision=0.7705233088554208
+2137_2: Sensitivity=0.9625989676997454
+2137_2: Specificity=0.9219075854259048
+2138_1: Dice=[0.952 0.821]
+2138_1: Precision=0.7220263952670556
+2138_1: Sensitivity=0.9527607629903807
+2138_1: Specificity=0.9177438034538568
+2140_1: Dice=[0.954 0.84 ]
+2140_1: Precision=0.778970315553848
+2140_1: Sensitivity=0.9117865592554211
+2140_1: Specificity=0.9334622366826413
+2141_1: Dice=[0.964 0.831]
+2141_1: Precision=0.8092895088521476
+2141_1: Sensitivity=0.8535741535665818
+2141_1: Specificity=0.9583066222870933
+2141_2: Dice=[0.919 0.709]
+2141_2: Precision=0.5822640498004885
+2141_2: Sensitivity=0.9072300778768557
+2141_2: Specificity=0.8666763856826846
+2142_1: Dice=[0.953 0.821]
+2142_1: Precision=0.7248726459771488
+2142_1: Sensitivity=0.9469295850007245
+2142_1: Specificity=0.9214139301809212
+2142_2: Dice=[0.97  0.865]
+2142_2: Precision=0.8431943166499047
+2142_2: Sensitivity=0.887185289002212
+2142_2: Specificity=0.9643552460852425
+2143_1: Dice=[0.952 0.805]
+2143_1: Precision=0.6959478370388511
+2143_1: Sensitivity=0.9539626306040606
+2143_1: Specificity=0.9165521454573387
+2143_2: Dice=[0.954 0.82 ]
+2143_2: Precision=0.7170228317611899
+2143_2: Sensitivity=0.95738721674251
+2143_2: Specificity=0.9208694348093213
+2148_1: Dice=[0.962 0.827]
+2148_1: Precision=0.7323499041156513
+2148_1: Sensitivity=0.9495932263905537
+2148_1: Specificity=0.9354425515562956
+2148_2: Dice=[0.936 0.773]
+2148_2: Precision=0.6629922548908785
+2148_2: Sensitivity=0.9276894212099396
+2148_2: Specificity=0.8941299353947582
+2150_1: Dice=[0.957 0.854]
+2150_1: Precision=0.8225380122847649
+2150_1: Sensitivity=0.8888400244825788
+2150_1: Specificity=0.9457337686914239
+2151_1: Dice=[0.966 0.872]
+2151_1: Precision=0.8286275717183426
+2151_1: Sensitivity=0.9199642095950457
+2151_1: Specificity=0.95275034204508
+2151_2: Dice=[0.96  0.833]
+2151_2: Precision=0.7734954687567537
+2151_2: Sensitivity=0.9019875783354522
+2151_2: Specificity=0.9425850426263116
+2152_1: Dice=[0.96  0.774]
+2152_1: Precision=0.7270993436921523
+2152_1: Sensitivity=0.8270566883135297
+2152_1: Specificity=0.9490248536581959
+2152_2: Dice=[0.976 0.867]
+2152_2: Precision=0.8362253887995097
+2152_2: Sensitivity=0.8994046678980726
+2152_2: Specificity=0.9699742616463417
+2152_3: Dice=[0.936 0.811]
+2152_3: Precision=0.723239283433792
+2152_3: Sensitivity=0.922624535648749
+2152_3: Specificity=0.8984199750183499
+2153_1: Dice=[0.957 0.857]
+2153_1: Precision=0.8247960983708623
+2153_1: Sensitivity=0.8928558590941769
+2153_1: Specificity=0.9457051348013995
+2153_2: Dice=[0.958 0.845]
+2153_2: Precision=0.816541029313387
+2153_2: Sensitivity=0.8761055552344066
+2153_2: Specificity=0.9484333907108928
+2154_1: Dice=[0.967 0.867]
+2154_1: Precision=0.864880547440874
+2154_1: Sensitivity=0.8692067545760293
+2154_1: Specificity=0.9662806475733475
+2154_2: Dice=[0.935 0.812]
+2154_2: Precision=0.7519829075896376
+2154_2: Sensitivity=0.8829729431440967
+2154_2: Specificity=0.9102524521795553
+2155_1: Dice=[0.938 0.804]
+2155_1: Precision=0.7323210608494942
+2155_1: Sensitivity=0.8916502500378846
+2155_1: Specificity=0.9092674433321019
+2155_2: Dice=[0.962 0.874]
+2155_2: Precision=0.8373302963515252
+2155_2: Sensitivity=0.9148870457322669
+2155_2: Specificity=0.9488688382945463
+2157_1: Dice=[0.955 0.884]
+2157_1: Precision=0.8538801664374093
+2157_1: Sensitivity=0.9171646905374237
+2157_1: Specificity=0.941535340669838
+2157_2: Dice=[0.953 0.886]
+2157_2: Precision=0.8635187624321273
+2157_2: Sensitivity=0.9094985313373677
+2157_2: Specificity=0.9433826296642182
+2158_1: Dice=[0.957 0.867]
+2158_1: Precision=0.8326914478896219
+2158_1: Sensitivity=0.9044122032050026
+2158_1: Specificity=0.9442529291387561
+2158_2: Dice=[0.959 0.851]
+2158_2: Precision=0.7723959755508413
+2158_2: Sensitivity=0.9472889704063968
+2158_2: Specificity=0.9327711489209632
+*****   Dice   *****
+[0.846 0.865 0.857 0.865 0.856 0.907 0.92  0.927 0.934 0.887 0.889 0.784
+ 0.911 0.869 0.894 0.904 0.919 0.94  0.908 0.889 0.824 0.912 0.689 0.925
+ 0.896 0.875 0.833 0.915 0.93  0.929 0.923 0.909 0.922 0.902 0.937 0.912
+ 0.839 0.918 0.93  0.895 0.906 0.889 0.921 0.869 0.912 0.892 0.866 0.848
+ 0.821 0.889 0.928 0.915 0.921 0.882 0.862 0.93  0.786 0.878 0.897 0.925
+ 0.804 0.925 0.597 0.944 0.894 0.928 0.896 0.887 0.947 0.931 0.913 0.871
+ 0.921 0.884 0.909 0.888 0.935 0.919 0.926 0.936 0.941 0.855 0.891 0.709
+ 0.9   0.849 0.677 0.925 0.937 0.889 0.776 0.781 0.891 0.922 0.926 0.915
+ 0.906 0.878 0.83  0.892 0.845 0.927 0.739 0.892 0.893 0.887 0.728 0.906
+ 0.899 0.918 0.932 0.94  0.814 0.932 0.938 0.873 0.808 0.939 0.933 0.913
+ 0.909 0.93  0.926 0.895 0.377 0.932 0.91  0.882 0.917 0.903 0.896 0.908
+ 0.898 0.921 0.656 0.919 0.787 0.937 0.939 0.805 0.759 0.876 0.915 0.89
+ 0.93  0.828 0.936 0.92  0.56  0.822 0.93  0.891 0.864 0.9   0.915 0.854
+ 0.902 0.908 0.9   0.854 0.911 0.814 0.851 0.906 0.905 0.872 0.893 0.851
+ 0.696 0.926 0.935 0.93  0.921 0.941 0.901 0.909 0.894 0.897 0.926 0.904
+ 0.84  0.934 0.882 0.869 0.904 0.887 0.707 0.915 0.919 0.925 0.835 0.905
+ 0.91  0.9   0.833 0.887 0.897 0.916 0.905 0.903 0.778 0.875 0.846 0.884
+ 0.438 0.86  0.895 0.873 0.895 0.926 0.879 0.839 0.911 0.905 0.887 0.897
+ 0.897 0.814 0.887 0.917 0.878 0.887 0.894 0.855 0.906 0.919 0.896 0.867
+ 0.921 0.873 0.907 0.901 0.917 0.874 0.871 0.918 0.92  0.92  0.912 0.905]
+Dice mean:0.880110218996803
+Dice std:0.07210701127689825
+[0.932 0.954 0.954 0.957 0.944 0.957 0.967 0.974 0.964 0.965 0.964 0.916
+ 0.956 0.93  0.953 0.958 0.962 0.97  0.959 0.967 0.934 0.958 0.796 0.964
+ 0.941 0.935 0.906 0.959 0.969 0.964 0.96  0.947 0.971 0.953 0.971 0.969
+ 0.945 0.959 0.973 0.963 0.965 0.947 0.967 0.96  0.959 0.96  0.959 0.941
+ 0.939 0.936 0.974 0.949 0.963 0.932 0.934 0.973 0.925 0.949 0.949 0.97
+ 0.917 0.96  0.819 0.973 0.939 0.968 0.954 0.945 0.975 0.965 0.973 0.963
+ 0.967 0.947 0.97  0.958 0.969 0.966 0.969 0.969 0.97  0.91  0.972 0.914
+ 0.964 0.943 0.846 0.97  0.97  0.956 0.881 0.924 0.959 0.957 0.966 0.961
+ 0.971 0.944 0.897 0.939 0.898 0.973 0.87  0.945 0.958 0.954 0.821 0.953
+ 0.964 0.96  0.974 0.96  0.893 0.971 0.975 0.936 0.897 0.974 0.963 0.967
+ 0.951 0.96  0.97  0.951 0.575 0.966 0.961 0.966 0.972 0.946 0.95  0.967
+ 0.973 0.966 0.757 0.968 0.901 0.975 0.976 0.946 0.897 0.92  0.945 0.953
+ 0.97  0.909 0.968 0.955 0.857 0.921 0.969 0.95  0.941 0.967 0.97  0.922
+ 0.951 0.975 0.97  0.937 0.953 0.932 0.97  0.945 0.945 0.94  0.952 0.957
+ 0.884 0.952 0.967 0.976 0.965 0.969 0.947 0.963 0.965 0.946 0.968 0.956
+ 0.919 0.974 0.947 0.942 0.961 0.949 0.836 0.959 0.957 0.964 0.928 0.952
+ 0.96  0.956 0.907 0.948 0.974 0.976 0.951 0.965 0.899 0.959 0.924 0.97
+ 0.68  0.946 0.96  0.955 0.934 0.97  0.939 0.934 0.949 0.954 0.952 0.954
+ 0.964 0.919 0.953 0.97  0.952 0.954 0.962 0.936 0.957 0.966 0.96  0.96
+ 0.976 0.936 0.957 0.958 0.967 0.935 0.938 0.962 0.955 0.953 0.957 0.959]
+Dice label 0 mean:0.9457709255317847
+Dice label 0 std:0.04231580484598017
+[0.761 0.775 0.76  0.773 0.769 0.858 0.873 0.88  0.904 0.81  0.815 0.653
+ 0.866 0.808 0.834 0.85  0.877 0.91  0.857 0.811 0.714 0.866 0.582 0.886
+ 0.851 0.815 0.759 0.872 0.892 0.893 0.885 0.871 0.873 0.851 0.903 0.855
+ 0.734 0.876 0.887 0.828 0.847 0.831 0.874 0.778 0.866 0.824 0.774 0.755
+ 0.703 0.843 0.882 0.88  0.879 0.831 0.79  0.886 0.647 0.807 0.846 0.879
+ 0.691 0.891 0.374 0.915 0.849 0.889 0.839 0.829 0.919 0.898 0.853 0.779
+ 0.874 0.821 0.848 0.817 0.901 0.872 0.882 0.903 0.913 0.8   0.81  0.504
+ 0.836 0.755 0.508 0.88  0.904 0.823 0.671 0.639 0.824 0.888 0.886 0.869
+ 0.841 0.813 0.764 0.845 0.792 0.882 0.609 0.838 0.827 0.82  0.635 0.859
+ 0.834 0.876 0.889 0.92  0.735 0.892 0.901 0.81  0.72  0.904 0.902 0.859
+ 0.866 0.9   0.882 0.839 0.179 0.897 0.86  0.798 0.863 0.859 0.842 0.849
+ 0.822 0.877 0.555 0.871 0.672 0.899 0.902 0.664 0.62  0.832 0.885 0.828
+ 0.891 0.747 0.903 0.885 0.263 0.724 0.891 0.832 0.787 0.834 0.859 0.785
+ 0.853 0.84  0.83  0.772 0.868 0.696 0.733 0.866 0.865 0.803 0.833 0.744
+ 0.508 0.9   0.902 0.884 0.876 0.913 0.855 0.855 0.822 0.848 0.883 0.851
+ 0.76  0.894 0.817 0.796 0.847 0.824 0.579 0.871 0.88  0.887 0.742 0.858
+ 0.859 0.844 0.76  0.826 0.82  0.856 0.859 0.842 0.658 0.792 0.768 0.799
+ 0.196 0.774 0.829 0.792 0.856 0.882 0.818 0.743 0.873 0.856 0.821 0.84
+ 0.831 0.709 0.821 0.865 0.805 0.82  0.827 0.773 0.854 0.872 0.833 0.774
+ 0.867 0.811 0.857 0.845 0.867 0.812 0.804 0.874 0.884 0.886 0.867 0.851]
+Dice label 1 mean:0.8144495122134685
+Dice label 1 std:0.10621195053935462
+*****   Precision   *****
+[0.983 0.959 0.974 0.963 0.97  0.86  0.883 0.915 0.933 0.797 0.715 0.519
+ 0.979 0.787 0.778 0.844 0.906 0.887 0.844 0.796 0.599 0.836 0.412 0.914
+ 0.827 0.751 0.68  0.895 0.947 0.886 0.844 0.912 0.897 0.816 0.905 0.781
+ 0.69  0.824 0.922 0.781 0.79  0.803 0.834 0.801 0.864 0.926 0.761 0.646
+ 0.916 0.773 0.934 0.897 0.936 0.975 0.717 0.91  0.582 0.704 0.77  0.927
+ 0.556 0.946 0.958 0.94  0.822 0.837 0.784 0.745 0.938 0.917 0.842 0.819
+ 0.878 0.745 0.925 0.792 0.943 0.961 0.908 0.949 0.911 0.726 0.772 0.355
+ 0.775 0.71  0.348 0.89  0.873 0.734 0.514 0.592 0.794 0.898 0.899 0.853
+ 0.806 0.726 0.647 0.783 0.734 0.907 0.452 0.778 0.809 0.748 0.474 0.91
+ 0.93  0.877 0.924 0.921 0.599 0.872 0.931 0.744 0.574 0.884 0.883 0.859
+ 0.861 0.926 0.894 0.887 0.099 0.938 0.897 0.777 0.823 0.823 0.775 0.806
+ 0.831 0.864 0.391 0.904 0.553 0.95  0.955 0.95  0.465 0.812 0.903 0.871
+ 0.839 0.606 0.939 0.842 0.429 0.607 0.856 0.76  0.685 0.86  0.926 0.675
+ 0.778 0.827 0.761 0.703 0.907 0.539 0.766 0.786 0.783 0.695 0.753 0.714
+ 0.403 0.898 0.901 0.897 0.848 0.942 0.784 0.768 0.766 0.8   0.942 0.925
+ 0.635 0.913 0.759 0.691 0.838 0.722 0.426 0.814 0.859 0.833 0.704 0.856
+ 0.809 0.781 0.641 0.751 0.776 0.809 0.807 0.815 0.57  0.791 0.643 0.812
+ 0.11  0.677 0.786 0.855 0.794 0.844 0.727 0.607 0.818 0.771 0.722 0.779
+ 0.809 0.582 0.725 0.843 0.696 0.717 0.732 0.663 0.823 0.829 0.773 0.727
+ 0.836 0.723 0.825 0.817 0.865 0.752 0.732 0.837 0.854 0.864 0.833 0.772]
+Precision mean:0.7897477927734914
+Precision std:0.14216949473748475
+*****   Sensitivity   *****
+[0.621 0.65  0.623 0.646 0.637 0.855 0.864 0.848 0.876 0.824 0.947 0.88
+ 0.776 0.829 0.897 0.855 0.849 0.933 0.87  0.827 0.883 0.897 0.99  0.859
+ 0.877 0.891 0.859 0.85  0.842 0.901 0.931 0.833 0.85  0.89  0.901 0.945
+ 0.783 0.935 0.855 0.88  0.912 0.861 0.918 0.756 0.868 0.742 0.786 0.909
+ 0.57  0.925 0.834 0.865 0.829 0.724 0.879 0.863 0.728 0.945 0.938 0.836
+ 0.913 0.842 0.233 0.891 0.878 0.948 0.901 0.934 0.901 0.879 0.864 0.742
+ 0.87  0.914 0.784 0.845 0.862 0.798 0.857 0.861 0.915 0.891 0.853 0.869
+ 0.906 0.806 0.942 0.87  0.936 0.935 0.965 0.693 0.856 0.878 0.874 0.884
+ 0.879 0.924 0.93  0.918 0.859 0.858 0.931 0.908 0.846 0.908 0.961 0.813
+ 0.757 0.874 0.857 0.919 0.95  0.914 0.873 0.89  0.965 0.925 0.923 0.859
+ 0.872 0.875 0.869 0.796 0.889 0.86  0.826 0.821 0.906 0.898 0.921 0.898
+ 0.813 0.891 0.961 0.84  0.857 0.854 0.854 0.511 0.933 0.853 0.867 0.789
+ 0.949 0.972 0.87  0.933 0.19  0.896 0.929 0.92  0.926 0.81  0.801 0.939
+ 0.943 0.854 0.913 0.856 0.833 0.981 0.703 0.965 0.967 0.952 0.933 0.777
+ 0.685 0.902 0.904 0.872 0.907 0.887 0.939 0.963 0.888 0.902 0.831 0.788
+ 0.946 0.875 0.884 0.937 0.857 0.96  0.903 0.937 0.902 0.949 0.785 0.86
+ 0.917 0.917 0.932 0.918 0.871 0.91  0.918 0.871 0.779 0.793 0.955 0.787
+ 0.89  0.903 0.877 0.737 0.928 0.924 0.936 0.959 0.935 0.963 0.953 0.912
+ 0.854 0.907 0.947 0.887 0.954 0.957 0.95  0.928 0.889 0.92  0.902 0.827
+ 0.899 0.923 0.893 0.876 0.869 0.883 0.892 0.915 0.917 0.909 0.904 0.947]
+Sensitivity mean:0.8684982949483171
+Sensitivity std:0.09439378514050571
+*****   Specificity   *****
+[0.996 0.993 0.996 0.994 0.994 0.958 0.97  0.982 0.975 0.962 0.938 0.862
+ 0.994 0.922 0.935 0.956 0.972 0.961 0.955 0.963 0.895 0.947 0.662 0.974
+ 0.93  0.908 0.867 0.967 0.986 0.962 0.944 0.965 0.977 0.94  0.971 0.95
+ 0.933 0.939 0.982 0.951 0.949 0.937 0.955 0.965 0.958 0.985 0.956 0.905
+ 0.986 0.903 0.986 0.956 0.981 0.991 0.905 0.979 0.903 0.914 0.919 0.982
+ 0.861 0.981 0.994 0.981 0.926 0.951 0.936 0.913 0.981 0.972 0.971 0.971
+ 0.968 0.919 0.986 0.951 0.983 0.99  0.976 0.984 0.969 0.871 0.965 0.852
+ 0.947 0.93  0.739 0.973 0.96  0.928 0.794 0.909 0.951 0.961 0.97  0.956
+ 0.964 0.911 0.832 0.91  0.865 0.979 0.78  0.921 0.953 0.931 0.704 0.971
+ 0.986 0.961 0.982 0.96  0.818 0.965 0.983 0.909 0.82  0.968 0.955 0.967
+ 0.949 0.971 0.973 0.967 0.407 0.98  0.972 0.962 0.962 0.931 0.925 0.955
+ 0.975 0.961 0.615 0.977 0.846 0.988 0.99  0.994 0.822 0.909 0.955 0.966
+ 0.954 0.84  0.981 0.936 0.927 0.873 0.958 0.923 0.904 0.973 0.985 0.871
+ 0.921 0.973 0.955 0.913 0.968 0.876 0.975 0.907 0.906 0.898 0.924 0.95
+ 0.833 0.951 0.967 0.979 0.956 0.979 0.916 0.937 0.952 0.926 0.985 0.979
+ 0.862 0.979 0.927 0.904 0.958 0.912 0.733 0.938 0.949 0.944 0.914 0.951
+ 0.944 0.935 0.846 0.92  0.966 0.966 0.93  0.957 0.859 0.958 0.869 0.972
+ 0.519 0.915 0.948 0.971 0.902 0.958 0.902 0.883 0.925 0.922 0.918 0.933
+ 0.958 0.867 0.921 0.964 0.917 0.921 0.935 0.894 0.946 0.953 0.943 0.949
+ 0.97  0.898 0.946 0.948 0.966 0.91  0.909 0.949 0.942 0.943 0.944 0.933]
+Specificity mean:0.9317845080693229
+Specificity std:0.06942848429277178
+**********   Validation Data   **********
+2159_1: Dice=[0.97  0.882]
+2159_1: Precision=0.8971067448472286
+2159_1: Sensitivity=0.8665840966167493
+2159_1: Specificity=0.9744850319644
+2159_2: Dice=[0.934 0.726]
+2159_2: Precision=0.6197964194869489
+2159_2: Sensitivity=0.8756695483195894
+2159_2: Specificity=0.8972593764444085
+2160_1: Dice=[0.948 0.806]
+2160_1: Precision=0.7359669862012638
+2160_1: Sensitivity=0.8899053480188577
+2160_1: Specificity=0.9239460581889053
+2160_2: Dice=[0.961 0.866]
+2160_2: Precision=0.8810242316466382
+2160_2: Sensitivity=0.8512456936574191
+2160_2: Specificity=0.9655710138448863
+2162_1: Dice=[0.947 0.823]
+2162_1: Precision=0.7683242578463182
+2162_1: Sensitivity=0.8850442943887561
+2162_1: Specificity=0.9270867683626322
+2162_2: Dice=[0.915 0.751]
+2162_2: Precision=0.6194748528348653
+2162_2: Sensitivity=0.9537457082238133
+2162_2: Specificity=0.8523830568781198
+2163_1: Dice=[0.959 0.855]
+2163_1: Precision=0.8038981139679559
+2163_1: Sensitivity=0.9127382829993964
+2163_1: Specificity=0.9424356760620812
+2164_1: Dice=[0.949 0.853]
+2164_1: Precision=0.8046812327708173
+2164_1: Sensitivity=0.9065473158387696
+2164_1: Specificity=0.9292003933531773
+2166_1: Dice=[0.965 0.893]
+2166_1: Precision=0.8843630619449057
+2166_1: Sensitivity=0.9021289190155753
+2166_1: Specificity=0.9620789950457956
+2166_2: Dice=[0.95  0.836]
+2166_2: Precision=0.8700389624846933
+2166_2: Sensitivity=0.8040931220240912
+2166_2: Specificity=0.9614455348497438
+2168_1: Dice=[0.968 0.876]
+2168_1: Precision=0.8338286280336801
+2168_1: Sensitivity=0.923578153061066
+2168_1: Specificity=0.95591999335633
+2169_1: Dice=[0.957 0.878]
+2169_1: Precision=0.8642739227174681
+2169_1: Sensitivity=0.8920896971492964
+2169_1: Specificity=0.9516782621443183
+2170_1: Dice=[0.974 0.87 ]
+2170_1: Precision=0.8636628286933067
+2170_1: Sensitivity=0.8759234041527578
+2170_1: Specificity=0.9724856661207283
+2170_2: Dice=[0.976 0.906]
+2170_2: Precision=0.9150836831435069
+2170_2: Sensitivity=0.896770419927587
+2170_2: Specificity=0.9782948844516227
+2171_1: Dice=[0.916 0.774]
+2171_1: Precision=0.6767132173259649
+2171_1: Sensitivity=0.9046693024593577
+2171_1: Specificity=0.868748313349925
+2171_2: Dice=[0.943 0.835]
+2171_2: Precision=0.8099982769341414
+2171_2: Sensitivity=0.8624290089975113
+2171_2: Specificity=0.9323015652693843
+2172_1: Dice=[0.901 0.763]
+2172_1: Precision=0.6390470949955186
+2172_1: Sensitivity=0.9471093418303649
+2172_1: Specificity=0.8330182007130176
+2172_2: Dice=[0.956 0.874]
+2172_2: Precision=0.9260780203903054
+2172_2: Sensitivity=0.8282386342954902
+2172_2: Specificity=0.9749569125980669
+2173_1: Dice=[0.937 0.717]
+2173_1: Precision=0.8695323132074219
+2173_1: Sensitivity=0.6105533025684053
+2173_1: Specificity=0.974979311749653
+2174_1: Dice=[0.962 0.811]
+2174_1: Precision=0.7252148585946095
+2174_1: Sensitivity=0.9195967029930515
+2174_1: Specificity=0.9392923864198125
+2174_2: Dice=[0.981 0.89 ]
+2174_2: Precision=0.839625782611818
+2174_2: Sensitivity=0.9471374073910418
+2174_2: Specificity=0.971575327407332
+2175_1: Dice=[0.968 0.693]
+2175_1: Precision=0.7892482252290516
+2175_1: Sensitivity=0.6182378159488208
+2175_1: Specificity=0.9805912152534474
+2178_1: Dice=[0.946 0.805]
+2178_1: Precision=0.7612602792287635
+2178_1: Sensitivity=0.8542309856398463
+2178_1: Specificity=0.9311802819202755
+2178_2: Dice=[0.943 0.825]
+2178_2: Precision=0.8290377622035893
+2178_2: Sensitivity=0.8215603031501465
+2178_2: Specificity=0.9441878644300334
+2179_1: Dice=[0.96  0.791]
+2179_1: Precision=0.7197805623090829
+2179_1: Sensitivity=0.8790011696392113
+2179_1: Specificity=0.9422041329684832
+2179_2: Dice=[0.96  0.735]
+2179_2: Precision=0.877678514511561
+2179_2: Sensitivity=0.6324448119274484
+2179_2: Specificity=0.9841531266664464
+2180_1: Dice=[0.95  0.879]
+2180_1: Precision=0.9189344119291175
+2180_1: Sensitivity=0.8428396948559187
+2180_1: Specificity=0.9671828695963008
+2181_1: Dice=[0.957 0.832]
+2181_1: Precision=0.7672705841067886
+2181_1: Sensitivity=0.9080415093736856
+2181_1: Specificity=0.9363090027296669
+2181_2: Dice=[0.96  0.835]
+2181_2: Precision=0.7592093274076278
+2181_2: Sensitivity=0.9272873868656242
+2181_2: Specificity=0.9371317737248781
+2182_1: Dice=[0.939 0.746]
+2182_1: Precision=0.6805947241303008
+2182_1: Sensitivity=0.8247695011182619
+2182_1: Specificity=0.917740151904628
+2182_2: Dice=[0.964 0.788]
+2182_2: Precision=0.7581905728979004
+2182_2: Sensitivity=0.8211812453879775
+2182_2: Specificity=0.9570334689848486
+2183_1: Dice=[0.972 0.813]
+2183_1: Precision=0.8864071741076284
+2183_1: Sensitivity=0.7508804750667886
+2183_1: Specificity=0.9841899304096134
+2183_2: Dice=[0.959 0.655]
+2183_2: Precision=0.7677638053581192
+2183_2: Sensitivity=0.5712147221295671
+2183_2: Specificity=0.9757856440040452
+2184_1: Dice=[0.961 0.828]
+2184_1: Precision=0.7688505134420228
+2184_1: Sensitivity=0.8971727343144849
+2184_1: Specificity=0.9445929786833946
+2185_1: Dice=[0.978 0.878]
+2185_1: Precision=0.907702799468067
+2185_1: Sensitivity=0.8509042787825319
+2185_1: Specificity=0.9839564141744026
+2185_2: Dice=[0.97  0.882]
+2185_2: Precision=0.9275586923286352
+2185_2: Sensitivity=0.8413114504976825
+2185_2: Specificity=0.982473296986157
+2186_1: Dice=[0.952 0.758]
+2186_1: Precision=0.7890950727451493
+2186_1: Sensitivity=0.7300876294001819
+2186_1: Specificity=0.9589841149974465
+2187_1: Dice=[0.963 0.85 ]
+2187_1: Precision=0.8348510427010923
+2187_1: Sensitivity=0.864983743517985
+2187_1: Specificity=0.9587135806637406
+2187_2: Dice=[0.889 0.633]
+2187_2: Precision=0.4883090624303715
+2187_2: Sensitivity=0.9008896251303761
+2187_2: Specificity=0.8161706550698319
+2188_1: Dice=[0.958 0.773]
+2188_1: Precision=0.8135633527205522
+2188_1: Sensitivity=0.7361454375545636
+2188_1: Specificity=0.9672309893401294
+2188_2: Dice=[0.947 0.707]
+2188_2: Precision=0.7110911933844071
+2188_2: Sensitivity=0.7033195289245503
+2188_2: Specificity=0.9477680789156199
+2189_1: Dice=[0.966 0.895]
+2189_1: Precision=0.9379574372255377
+2189_1: Sensitivity=0.8549930520464881
+2189_1: Specificity=0.9808139410302563
+2189_2: Dice=[0.97  0.918]
+2189_2: Precision=0.9123630441766771
+2189_2: Sensitivity=0.923863619366708
+2189_2: Specificity=0.9676045494504294
+2191_1: Dice=[0.943 0.722]
+2191_1: Precision=0.610633545080128
+2191_1: Sensitivity=0.8842110583240675
+2191_1: Specificity=0.9093567251461988
+2191_2: Dice=[0.939 0.761]
+2191_2: Precision=0.683139007500166
+2191_2: Sensitivity=0.8595384572557971
+2191_2: Specificity=0.9127129335616814
+2192_1: Dice=[0.955 0.835]
+2192_1: Precision=0.7774671682864807
+2192_1: Sensitivity=0.9013579686001313
+2192_1: Specificity=0.9362696561958325
+2192_2: Dice=[0.961 0.735]
+2192_2: Precision=0.9705542074925003
+2192_2: Sensitivity=0.5920099422947216
+2192_2: Specificity=0.9965756849820688
+2193_1: Dice=[0.94  0.633]
+2193_1: Precision=0.5057958334048163
+2193_1: Sensitivity=0.8464394744145541
+2193_1: Specificity=0.9034960084064111
+2194_1: Dice=[0.976 0.877]
+2194_1: Precision=0.8738631821675634
+2194_1: Sensitivity=0.8801085024555493
+2194_1: Specificity=0.9755369223962439
+2194_2: Dice=[0.968 0.854]
+2194_2: Precision=0.8350785907859078
+2194_2: Sensitivity=0.8734141336266029
+2194_2: Specificity=0.9630547912938108
+2195_1: Dice=[0.966 0.867]
+2195_1: Precision=0.8110390840498819
+2195_1: Sensitivity=0.9322781952890565
+2195_1: Specificity=0.9496165526077502
+2196_1: Dice=[0.946 0.741]
+2196_1: Precision=0.6065289145822601
+2196_1: Sensitivity=0.9506010406076192
+2196_1: Specificity=0.9047691611485145
+2196_2: Dice=[0.939 0.696]
+2196_2: Precision=0.5913364828966428
+2196_2: Sensitivity=0.8452033448192613
+2196_2: Specificity=0.9075176848204182
+2199_1: Dice=[0.973 0.878]
+2199_1: Precision=0.8286039070394072
+2199_1: Sensitivity=0.9332740582673898
+2199_1: Specificity=0.9608225720111393
+2200_1: Dice=[0.967 0.899]
+2200_1: Precision=0.9586857982976978
+2200_1: Sensitivity=0.8454290836622731
+2200_1: Specificity=0.9872039823044723
+2200_2: Dice=[0.976 0.904]
+2200_2: Precision=0.9393258310590015
+2200_2: Sensitivity=0.8715756798185549
+2200_2: Specificity=0.9852050718973396
+2201_1: Dice=[0.958 0.868]
+2201_1: Precision=0.9750732799409144
+2201_1: Sensitivity=0.7821838271778655
+2201_1: Specificity=0.9926021519517989
+2201_2: Dice=[0.965 0.853]
+2201_2: Precision=0.9071996068474076
+2201_2: Sensitivity=0.8055389896580314
+2201_2: Specificity=0.9785890573012007
+2203_1: Dice=[0.954 0.88 ]
+2203_1: Precision=0.9374210293960937
+2203_1: Sensitivity=0.8300549633858254
+2203_1: Specificity=0.9766187894325972
+2203_2: Dice=[0.762 0.601]
+2203_2: Precision=0.45985407438806875
+2203_2: Sensitivity=0.8672451880001236
+2203_2: Specificity=0.6440658296719312
+*****   Dice   *****
+[0.926 0.83  0.877 0.913 0.885 0.833 0.907 0.901 0.929 0.893 0.922 0.917
+ 0.922 0.941 0.845 0.889 0.832 0.915 0.827 0.886 0.936 0.831 0.876 0.884
+ 0.876 0.848 0.915 0.894 0.897 0.842 0.876 0.893 0.807 0.895 0.928 0.926
+ 0.855 0.906 0.761 0.866 0.827 0.93  0.944 0.833 0.85  0.895 0.848 0.787
+ 0.927 0.911 0.917 0.843 0.818 0.926 0.933 0.94  0.913 0.909 0.917 0.682]
+Dice mean:0.8808193405469259
+Dice std:0.0494849413940021
+[0.97  0.934 0.948 0.961 0.947 0.915 0.959 0.949 0.965 0.95  0.968 0.957
+ 0.974 0.976 0.916 0.943 0.901 0.956 0.937 0.962 0.981 0.968 0.946 0.943
+ 0.96  0.96  0.95  0.957 0.96  0.939 0.964 0.972 0.959 0.961 0.978 0.97
+ 0.952 0.963 0.889 0.958 0.947 0.966 0.97  0.943 0.939 0.955 0.961 0.94
+ 0.976 0.968 0.966 0.946 0.939 0.973 0.967 0.976 0.958 0.965 0.954 0.762]
+Dice label 0 mean:0.9514514158169428
+Dice label 0 std:0.030365425092966615
+[0.882 0.726 0.806 0.866 0.823 0.751 0.855 0.853 0.893 0.836 0.876 0.878
+ 0.87  0.906 0.774 0.835 0.763 0.874 0.717 0.811 0.89  0.693 0.805 0.825
+ 0.791 0.735 0.879 0.832 0.835 0.746 0.788 0.813 0.655 0.828 0.878 0.882
+ 0.758 0.85  0.633 0.773 0.707 0.895 0.918 0.722 0.761 0.835 0.735 0.633
+ 0.877 0.854 0.867 0.741 0.696 0.878 0.899 0.904 0.868 0.853 0.88  0.601]
+Dice label 1 mean:0.8101872632900874
+Dice label 1 std:0.07707377576750359
+*****   Precision   *****
+[0.897 0.62  0.736 0.881 0.768 0.619 0.804 0.805 0.884 0.87  0.834 0.864
+ 0.864 0.915 0.677 0.81  0.639 0.926 0.87  0.725 0.84  0.789 0.761 0.829
+ 0.72  0.878 0.919 0.767 0.759 0.681 0.758 0.886 0.768 0.769 0.908 0.928
+ 0.789 0.835 0.488 0.814 0.711 0.938 0.912 0.611 0.683 0.777 0.971 0.506
+ 0.874 0.835 0.811 0.607 0.591 0.829 0.959 0.939 0.975 0.907 0.937 0.46 ]
+Precision mean:0.7954341864656059
+Precision std:0.1216292018391741
+*****   Sensitivity   *****
+[0.867 0.876 0.89  0.851 0.885 0.954 0.913 0.907 0.902 0.804 0.924 0.892
+ 0.876 0.897 0.905 0.862 0.947 0.828 0.611 0.92  0.947 0.618 0.854 0.822
+ 0.879 0.632 0.843 0.908 0.927 0.825 0.821 0.751 0.571 0.897 0.851 0.841
+ 0.73  0.865 0.901 0.736 0.703 0.855 0.924 0.884 0.86  0.901 0.592 0.846
+ 0.88  0.873 0.932 0.951 0.845 0.933 0.845 0.872 0.782 0.806 0.83  0.867]
+Sensitivity mean:0.8451937055370872
+Sensitivity std:0.08980534493486549
+*****   Specificity   *****
+[0.974 0.897 0.924 0.966 0.927 0.852 0.942 0.929 0.962 0.961 0.956 0.952
+ 0.972 0.978 0.869 0.932 0.833 0.975 0.975 0.939 0.972 0.981 0.931 0.944
+ 0.942 0.984 0.967 0.936 0.937 0.918 0.957 0.984 0.976 0.945 0.984 0.982
+ 0.959 0.959 0.816 0.967 0.948 0.981 0.968 0.909 0.913 0.936 0.997 0.903
+ 0.976 0.963 0.95  0.905 0.908 0.961 0.987 0.985 0.993 0.979 0.977 0.644]
+Specificity mean:0.9423192394267972
+Specificity std:0.05404563686109023
+**********   Testing Data   **********
+2205_1: Dice=[0.968 0.868]
+2205_1: Precision=0.8393145491854185
+2205_1: Sensitivity=0.8980659429458485
+2205_1: Specificity=0.9601661785101084
+2205_2: Dice=[0.899 0.429]
+2205_2: Precision=0.7825106092385737
+2205_2: Sensitivity=0.29520089799148014
+2205_2: Specificity=0.9772113372159882
+2206_1: Dice=[0.953 0.811]
+2206_1: Precision=0.7445739836128101
+2206_1: Sensitivity=0.8894610291937946
+2206_1: Specificity=0.9320366625175157
+2206_2: Dice=[0.977 0.873]
+2206_2: Precision=0.9491802808004823
+2206_2: Sensitivity=0.8074889168427352
+2206_2: Specificity=0.9915335107947737
+2207_1: Dice=[0.738 0.427]
+2207_1: Precision=0.2740298385365006
+2207_1: Sensitivity=0.9676256914655459
+2207_1: Specificity=0.587970647432579
+2207_2: Dice=[0.822 0.45 ]
+2207_2: Precision=0.333859283577027
+2207_2: Sensitivity=0.6910886123562048
+2207_2: Specificity=0.7382975305924555
+2211_1: Dice=[0.939 0.766]
+2211_1: Precision=0.6799810838116119
+2211_1: Sensitivity=0.8762617588724778
+2211_1: Specificity=0.9091663432979702
+2212_1: Dice=[0.896 0.584]
+2212_1: Precision=0.4417816270656848
+2212_1: Sensitivity=0.8614674760978712
+2212_1: Specificity=0.8297679936999934
+2212_2: Dice=[0.91  0.645]
+2212_2: Precision=0.5101119098442993
+2212_2: Sensitivity=0.8777446187916925
+2212_2: Specificity=0.8534473853493166
+2213_1: Dice=[0.852 0.627]
+2213_1: Precision=0.46453434416051237
+2213_1: Sensitivity=0.9637644608600856
+2213_1: Specificity=0.7488680432013319
+2213_2: Dice=[0.716 0.494]
+2213_2: Precision=0.33103386640004023
+2213_2: Sensitivity=0.9735412651130191
+2213_2: Specificity=0.5604360783776378
+2215_1: Dice=[0.951 0.841]
+2215_1: Precision=0.8500727739726027
+2215_1: Sensitivity=0.8325381519369445
+2215_1: Specificity=0.9540066712192047
+2215_2: Dice=[0.924 0.782]
+2215_2: Precision=0.6977466923686552
+2215_2: Sensitivity=0.8897283366577818
+2215_2: Specificity=0.8870733750885704
+2216_1: Dice=[0.946 0.78 ]
+2216_1: Precision=0.7287835341801812
+2216_1: Sensitivity=0.8388377176288918
+2216_1: Specificity=0.929648345885115
+2217_1: Dice=[0.972 0.872]
+2217_1: Precision=0.89308154778049
+2217_1: Sensitivity=0.8515427592412006
+2217_1: Specificity=0.9767654603255684
+2217_2: Dice=[0.945 0.817]
+2217_2: Precision=0.7687919820876427
+2217_2: Sensitivity=0.8713352172377252
+2217_2: Specificity=0.9281627941348854
+2218_1: Dice=[0.916 0.778]
+2218_1: Precision=0.8594893458910196
+2218_1: Sensitivity=0.7100701685312656
+2218_1: Specificity=0.9503193663223822
+2218_2: Dice=[0.967 0.887]
+2218_2: Precision=0.9108073005673661
+2218_2: Sensitivity=0.8651104204721547
+2218_2: Specificity=0.9745479040903854
+2219_1: Dice=[0.906 0.674]
+2219_1: Precision=0.5404070058859753
+2219_1: Sensitivity=0.8941625297678992
+2219_1: Specificity=0.8455619265779108
+2220_1: Dice=[0.945 0.803]
+2220_1: Precision=0.7387283285748626
+2220_1: Sensitivity=0.8786781303610662
+2220_1: Specificity=0.9226212333540665
+2220_2: Dice=[0.934 0.783]
+2220_2: Precision=0.8575936271466997
+2220_2: Sensitivity=0.7209543199383289
+2220_2: Specificity=0.9594629506923947
+2221_1: Dice=[0.971 0.878]
+2221_1: Precision=0.9404493512808612
+2221_1: Sensitivity=0.8236304684475416
+2221_1: Specificity=0.9864160028234346
+2221_2: Dice=[0.858 0.469]
+2221_2: Precision=0.46914392870334415
+2221_2: Sensitivity=0.46938398415661453
+2221_2: Specificity=0.8579057310243949
+2222_1: Dice=[0.846 0.655]
+2222_1: Precision=0.4975576521978671
+2222_1: Sensitivity=0.9567806350002128
+2222_1: Specificity=0.7409465524172327
+2222_2: Dice=[0.922 0.776]
+2222_2: Precision=0.7955652492871031
+2222_2: Sensitivity=0.758180007141649
+2222_2: Specificity=0.9293785041317247
+2223_1: Dice=[0.902 0.769]
+2223_1: Precision=0.9886431302156597
+2223_1: Sensitivity=0.6290378374816743
+2223_1: Specificity=0.9958600599599219
+2223_2: Dice=[0.954 0.849]
+2223_2: Precision=0.9602668340461559
+2223_2: Sensitivity=0.7615121043980213
+2223_2: Specificity=0.9889773472743029
+2224_1: Dice=[0.96  0.871]
+2224_1: Precision=0.9489515138643939
+2224_1: Sensitivity=0.805452472108689
+2224_1: Specificity=0.9851546629825204
+2225_1: Dice=[0.954 0.826]
+2225_1: Precision=0.7857903380073268
+2225_1: Sensitivity=0.8714569480093864
+2225_1: Specificity=0.9406601619472665
+2225_2: Dice=[0.964 0.859]
+2225_2: Precision=0.9759475339980358
+2225_2: Sensitivity=0.7675048761012134
+2225_2: Specificity=0.994376126234236
+2226_1: Dice=[0.946 0.835]
+2226_1: Precision=0.7711004323758848
+2226_1: Sensitivity=0.9111091349680976
+2226_1: Specificity=0.9215218779633464
+2226_2: Dice=[0.941 0.831]
+2226_2: Precision=0.8513400185213891
+2226_2: Sensitivity=0.8114052366810109
+2226_2: Specificity=0.9491818112649725
+2227_1: Dice=[0.891 0.733]
+2227_1: Precision=0.6142737073962439
+2227_1: Sensitivity=0.9076889475126765
+2227_1: Specificity=0.8263643906817517
+2228_1: Dice=[0.956 0.879]
+2228_1: Precision=0.9875592815579698
+2228_1: Sensitivity=0.7925612500717016
+2228_1: Specificity=0.9957946827394395
+2229_1: Dice=[0.947 0.86 ]
+2229_1: Precision=0.8123990202596794
+2229_1: Sensitivity=0.9141988781075916
+2229_1: Specificity=0.9266120696509501
+2232_1: Dice=[0.97  0.867]
+2232_1: Precision=0.8596535449962458
+2232_1: Sensitivity=0.8735299567297736
+2232_1: Specificity=0.9679498641766953
+2234_1: Dice=[0.974 0.9  ]
+2234_1: Precision=0.9330136522051422
+2234_1: Sensitivity=0.8690576029701385
+2234_1: Specificity=0.9831889143057351
+2234_2: Dice=[0.963 0.869]
+2234_2: Precision=0.8721551061037962
+2234_2: Sensitivity=0.8658943074822109
+2234_2: Specificity=0.9636541152983308
+2236_1: Dice=[0.946 0.833]
+2236_1: Precision=0.9120133682594165
+2236_1: Sensitivity=0.7660192701615962
+2236_1: Specificity=0.9735435508840544
+2241_1: Dice=[0.955 0.872]
+2241_1: Precision=0.9822639359448868
+2241_1: Sensitivity=0.7838468186124965
+2241_1: Specificity=0.9942714340098135
+2241_2: Dice=[0.943 0.849]
+2241_2: Precision=0.9844783490607637
+2241_2: Sensitivity=0.7466651802777424
+2241_2: Specificity=0.9946125590344587
+2242_1: Dice=[0.919 0.817]
+2242_1: Precision=0.7451693661458225
+2242_1: Sensitivity=0.9033934455219006
+2242_1: Specificity=0.88158227821836
+2242_2: Dice=[0.94  0.868]
+2242_2: Precision=0.9164181813903297
+2242_2: Sensitivity=0.8242479583228768
+2242_2: Specificity=0.9628504020069718
+2243_1: Dice=[0.958 0.867]
+2243_1: Precision=0.8474923234390993
+2243_1: Sensitivity=0.887956357532522
+2243_1: Specificity=0.9506637367929924
+2243_2: Dice=[0.962 0.856]
+2243_2: Precision=0.86220480006149
+2243_2: Sensitivity=0.8494888299886406
+2243_2: Specificity=0.9636322142205092
+2244_1: Dice=[0.863 0.615]
+2244_1: Precision=0.4586729515583821
+2244_1: Sensitivity=0.9332249723795256
+2244_1: Specificity=0.7697942622663432
+2245_1: Dice=[0.962 0.849]
+2245_1: Precision=0.8081004775349105
+2245_1: Sensitivity=0.8948186965552872
+2245_1: Specificity=0.9502590341075973
+2246_1: Dice=[0.923 0.757]
+2246_1: Precision=0.6794797286910355
+2246_1: Sensitivity=0.8535444641738532
+2246_1: Specificity=0.8914728386927229
+2246_2: Dice=[0.911 0.712]
+2246_2: Precision=0.9270413223140496
+2246_2: Sensitivity=0.577610710607621
+2246_2: Specificity=0.9813150839565401
+2247_1: Dice=[0.949 0.853]
+2247_1: Precision=0.8011351075126576
+2247_1: Sensitivity=0.9130336011234795
+2247_1: Specificity=0.9276007890275038
+2247_2: Dice=[0.857 0.595]
+2247_2: Precision=0.5336779556227245
+2247_2: Sensitivity=0.6730094513700589
+2247_2: Specificity=0.8234832941984102
+2248_1: Dice=[0.96  0.855]
+2248_1: Precision=0.8087599539923938
+2248_1: Sensitivity=0.9065818982977167
+2248_1: Specificity=0.9455894559196355
+2248_2: Dice=[0.957 0.813]
+2248_2: Precision=0.9161166100063178
+2248_2: Sensitivity=0.730157968943325
+2248_2: Specificity=0.9823861181233086
+2249_1: Dice=[0.973 0.874]
+2249_1: Precision=0.8882910118064512
+2249_1: Sensitivity=0.8605578139753151
+2249_1: Specificity=0.9767461072417392
+2250_1: Dice=[0.98 0.89]
+2250_1: Precision=0.9356539569399014
+2250_1: Sensitivity=0.8480678176105797
+2250_1: Specificity=0.9890402952681778
+2250_2: Dice=[0.962 0.833]
+2250_2: Precision=0.9850139780788224
+2250_2: Sensitivity=0.7220265422575789
+2250_2: Specificity=0.9969877522311531
+2251_1: Dice=[0.97 0.89]
+2251_1: Precision=0.9592537581243271
+2251_1: Sensitivity=0.8301571827875358
+2251_1: Specificity=0.9893577967319649
+2252_1: Dice=[0.924 0.71 ]
+2252_1: Precision=0.870681732491281
+2252_1: Sensitivity=0.5989730246733457
+2252_1: Specificity=0.9708585129092898
+2252_2: Dice=[0.883 0.734]
+2252_2: Precision=0.6944231055161818
+2252_2: Sensitivity=0.7782610959712555
+2252_2: Specificity=0.8614359255279551
+2253_1: Dice=[0.941 0.856]
+2253_1: Precision=0.8958835507522719
+2253_1: Sensitivity=0.8198663286471537
+2253_1: Specificity=0.9584356643256208
+*****   Dice   *****
+[0.918 0.664 0.882 0.925 0.583 0.636 0.852 0.74  0.778 0.74  0.605 0.896
+ 0.853 0.863 0.922 0.881 0.847 0.927 0.79  0.874 0.859 0.924 0.664 0.75
+ 0.849 0.835 0.902 0.916 0.89  0.912 0.891 0.886 0.812 0.918 0.904 0.918
+ 0.937 0.916 0.89  0.914 0.896 0.868 0.904 0.912 0.909 0.739 0.906 0.84
+ 0.811 0.901 0.726 0.908 0.885 0.924 0.935 0.898 0.93  0.817 0.808 0.899]
+Dice mean:0.8512390742699305
+Dice std:0.08629773170168091
+[0.968 0.899 0.953 0.977 0.738 0.822 0.939 0.896 0.91  0.852 0.716 0.951
+ 0.924 0.946 0.972 0.945 0.916 0.967 0.906 0.945 0.934 0.971 0.858 0.846
+ 0.922 0.902 0.954 0.96  0.954 0.964 0.946 0.941 0.891 0.956 0.947 0.97
+ 0.974 0.963 0.946 0.955 0.943 0.919 0.94  0.958 0.962 0.863 0.962 0.923
+ 0.911 0.949 0.857 0.96  0.957 0.973 0.98  0.962 0.97  0.924 0.883 0.941]
+Dice label 0 mean:0.9272301097710928
+Dice label 0 std:0.05213619944954978
+[0.868 0.429 0.811 0.873 0.427 0.45  0.766 0.584 0.645 0.627 0.494 0.841
+ 0.782 0.78  0.872 0.817 0.778 0.887 0.674 0.803 0.783 0.878 0.469 0.655
+ 0.776 0.769 0.849 0.871 0.826 0.859 0.835 0.831 0.733 0.879 0.86  0.867
+ 0.9   0.869 0.833 0.872 0.849 0.817 0.868 0.867 0.856 0.615 0.849 0.757
+ 0.712 0.853 0.595 0.855 0.813 0.874 0.89  0.833 0.89  0.71  0.734 0.856]
+Dice label 1 mean:0.7752480387687684
+Dice label 1 std:0.12514087221424433
+*****   Precision   *****
+[0.839 0.783 0.745 0.949 0.274 0.334 0.68  0.442 0.51  0.465 0.331 0.85
+ 0.698 0.729 0.893 0.769 0.859 0.911 0.54  0.739 0.858 0.94  0.469 0.498
+ 0.796 0.989 0.96  0.949 0.786 0.976 0.771 0.851 0.614 0.988 0.812 0.86
+ 0.933 0.872 0.912 0.982 0.984 0.745 0.916 0.847 0.862 0.459 0.808 0.679
+ 0.927 0.801 0.534 0.809 0.916 0.888 0.936 0.985 0.959 0.871 0.694 0.896]
+Precision mean:0.7778741555824845
+Precision std:0.18481075744433936
+*****   Sensitivity   *****
+[0.898 0.295 0.889 0.807 0.968 0.691 0.876 0.861 0.878 0.964 0.974 0.833
+ 0.89  0.839 0.852 0.871 0.71  0.865 0.894 0.879 0.721 0.824 0.469 0.957
+ 0.758 0.629 0.762 0.805 0.871 0.768 0.911 0.811 0.908 0.793 0.914 0.874
+ 0.869 0.866 0.766 0.784 0.747 0.903 0.824 0.888 0.849 0.933 0.895 0.854
+ 0.578 0.913 0.673 0.907 0.73  0.861 0.848 0.722 0.83  0.599 0.778 0.82 ]
+Sensitivity mean:0.8157427083243937
+Sensitivity std:0.11910178732311555
+*****   Specificity   *****
+[0.96  0.977 0.932 0.992 0.588 0.738 0.909 0.83  0.853 0.749 0.56  0.954
+ 0.887 0.93  0.977 0.928 0.95  0.975 0.846 0.923 0.959 0.986 0.858 0.741
+ 0.929 0.996 0.989 0.985 0.941 0.994 0.922 0.949 0.826 0.996 0.927 0.968
+ 0.983 0.964 0.974 0.994 0.995 0.882 0.963 0.951 0.964 0.77  0.95  0.891
+ 0.981 0.928 0.823 0.946 0.982 0.977 0.989 0.997 0.989 0.971 0.861 0.958]
+Specificity mean:0.9184488953208588
+Specificity std:0.09257256907222607
+end of code
+----------------------done--------------------------
+Fri Apr 30 01:34:55 EDT 2021
